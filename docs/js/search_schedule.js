@@ -53,7 +53,7 @@ $(document).ready(function(){
 	$("tr").each(function(){
 	    var txt = $(this).find("td.tournament").html();
 
-	    if(txt == tournament || (tournament == "全て" && genre == $(this).find("td.genre").html()) || genre == "全て" || txt == undefined){
+	    if(txt == tournament || (tournament == "全て" && (genre == "全て" || genre == $(this).find("td.genre").html())) || txt == undefined){
 		$(this).show();
 		
 		if(count % 2 == 0){
