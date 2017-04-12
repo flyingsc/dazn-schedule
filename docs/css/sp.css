@@ -1,0 +1,50 @@
+body {
+    background-color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border: 1px solid #bbbbbb;
+}
+
+td.date, td.title {
+    display: inline;
+    padding-right: 8px;
+    font-weight: bold;
+}
+
+td.genre {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.8em;
+}
+td.genre:before {
+    content: "ジャンル：";
+}
+
+td.tournament {
+    display: block;
+    font-size: 0.8em;
+}
+td.tournament:before {
+    content: "リーグ：";
+}
+
+td.misc {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.8em;
+}
+ 
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+tr.date-row{
+    background-color: #707070;
+    color: #eeeeee;
+}
