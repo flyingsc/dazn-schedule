@@ -20,13 +20,15 @@
 </head>
 <body>
 <p><a href="./sp/">スマホ向けにもう１パターン</a></p>
-<div style="margin-bottom: 1em">更新: 2017年06月26日 07:45 <a href="./changelog.html">更新履歴</a></div>
+<div style="margin-bottom: 1em">更新: 2017年06月26日 19:12 <a href="./changelog.html">更新履歴</a></div>
 ジャンルで検索：<select id="genre" style="margin-bottom: 0.5em;"><option value="全て">全て</option>
 <option value="WWE">WWE</option>
 <option value="ゴルフ">ゴルフ</option>
 <option value="サッカー">サッカー</option>
+<option value="ダーツ">ダーツ</option>
 <option value="テニス">テニス</option>
 <option value="バレーボール">バレーボール</option>
+<option value="モータースポーツ">モータースポーツ</option>
 <option value="ラグビーリーグ">ラグビーリーグ</option>
 <option value="水泳">水泳</option>
 <option value="総合格闘技">総合格闘技</option>
@@ -35,6 +37,7 @@
 </select><br/>
 リーグで検索:<select id="tournament" style="margin-bottom: 0.5em;"><option value="全て">全て</option>
 <option value="CONCACAFゴールドカップ" class="サッカー">CONCACAFゴールドカップ</option>
+<option value="F1" class="モータースポーツ">F1</option>
 <option value="IAAFワールドチャレンジ" class="陸上">IAAFワールドチャレンジ</option>
 <option value="J1リーグ" class="サッカー">J1リーグ</option>
 <option value="J2リーグ" class="サッカー">J2リーグ</option>
@@ -49,7 +52,9 @@
 <option value="WTAインターナショナル" class="テニス">WTAインターナショナル</option>
 <option value="WTAプレミア" class="テニス">WTAプレミア</option>
 <option value="WWE" class="WWE">WWE</option>
+<option value="エイゴン国際" class="テニス">エイゴン国際</option>
 <option value="ブラジル全国選手権" class="サッカー">ブラジル全国選手権</option>
+<option value="上海マスターズ" class="ダーツ">上海マスターズ</option>
 <option value="世界水球選手権" class="水泳">世界水球選手権</option>
 </select><br/><table>
 <tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>
@@ -65,6 +70,7 @@
 <tr><td class="date">10:00</td><td class="genre">総合格闘技</td><td class="tournament">UFC</td><td>ファイトナイト - キエーザ vs リー</td><td>実況：高柳謙一 解説：水垣偉弥</td></tr>
 <tr><td class="date">10:30</td><td class="genre">水泳</td><td class="tournament">世界水球選手権</td><td>男子 スーパーファイナル - 第6日 (ディレイ配信)</td><td></td></tr>
 <tr><td class="date">19:00</td><td class="genre">テニス</td><td class="tournament">WTAプレミア</td><td>エイゴン・インターナショナル- 第2日</td><td>実況：田中雄介　解説：波戸康広</td></tr>
+<tr><td class="date">20:30</td><td class="genre">テニス</td><td class="tournament">エイゴン国際</td><td>第2日：コート5</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>6月27日（火曜日）</b></td></tr>
 <tr><td class="date">08:05</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ナショナルズ vs カブス</td><td></td></tr>
 <tr><td class="date">08:10</td><td class="genre">野球</td><td class="tournament">MLB</td><td>レッドソックス vs ツインズ</td><td></td></tr>
@@ -193,6 +199,8 @@
 <tr><td class="date">11:10</td><td class="genre">野球</td><td class="tournament">MLB</td><td>マリナーズ vs ロイヤルズ</td><td></td></tr>
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>カープ vs ジャイアンツ</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ベイスターズ vs タイガース</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">20:00</td><td class="genre">ゴルフ</td><td class="tournament">PGAツアー</td><td>グリーンブライヤー・クラシック：初日</td><td></td></tr>
+<tr><td class="date">20:00</td><td class="genre">ダーツ</td><td class="tournament">上海マスターズ</td><td>初日</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>7月7日（金曜日）</b></td></tr>
 <tr><td class="date">02:45</td><td class="genre">野球</td><td class="tournament">MLB</td><td>カージナルス vs マーリンズ</td><td></td></tr>
 <tr><td class="date">08:05</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ナショナルズ vs ブレーブス</td><td></td></tr>
@@ -202,12 +210,14 @@
 <tr><td class="date">10:30</td><td class="genre">バレーボール</td><td class="tournament">Vサマーリーグ</td><td>茨城：初日</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">11:10</td><td class="genre">野球</td><td class="tournament">MLB</td><td>マリナーズ vs アスレチックス</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">11:10</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ドジャース vs Dバックス</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">17:00</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>オーストリアGP：フリー走行1回目</td><td>日本語実況・解説あり</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>7月8日（土曜日）</b></td></tr>
 <tr><td class="date">08:07</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ブルージェイズ vs アストロズ</td><td></td></tr>
 <tr><td class="date">09:30</td><td class="genre">バレーボール</td><td class="tournament">Vサマーリーグ</td><td>鹿児島：第2日</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">10:00</td><td class="genre">サッカー</td><td class="tournament">CONCACAFゴールドカップ</td><td>ホンジュラス vs コスタリカ</td><td>日本語実況あり</td></tr>
 <tr><td class="date">10:30</td><td class="genre">バレーボール</td><td class="tournament">Vサマーリーグ</td><td>茨城：第2日</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">11:10</td><td class="genre">野球</td><td class="tournament">MLB</td><td>マリナーズ vs アスレチックス</td><td></td></tr>
+<tr><td class="date">18:00</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>オーストリアGP：フリー走行3回目</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">18:00</td><td class="genre">サッカー</td><td class="tournament">Jリーグ</td><td>Jリーグ・ゾーン</td><td></td></tr>
 <tr><td class="date">18:00</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td>清水 vs G大阪</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">18:00</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td>町田 vs 群馬</td><td>日本語実況・解説あり</td></tr>
@@ -246,6 +256,7 @@
 <tr><td class="date">18:30</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td>浦和 vs 新潟</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">18:30</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td>東京V vs 岡山</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">19:00</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td>長崎 vs 愛媛</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">21:00</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>オーストリアGP：決勝</td><td>日本語実況・解説あり</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>7月10日（月曜日）</b></td></tr>
 <tr><td class="date">02:05</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ヤンキース vs ブルワーズ</td><td></td></tr>
 <tr><td class="date">02:07</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ブルージェイズ vs アストロズ</td><td></td></tr>
