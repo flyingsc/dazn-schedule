@@ -19,12 +19,13 @@
 <script src="../js/search_schedule.js"></script>
 </head>
 <body>
-<div style="margin-bottom: 1em">更新: 2017年09月02日 07:54 <a href="../changelog.html">更新履歴</a></div>
+<div style="margin-bottom: 1em">更新: 2017年09月02日 22:03 <a href="../changelog.html">更新履歴</a></div>
 ジャンルで検索：<select id="genre" style="margin-bottom: 1em;"><option value="全て">全て</option>
 <option value="WWE">WWE</option>
 <option value="アメフト">アメフト</option>
 <option value="ゴルフ">ゴルフ</option>
 <option value="サッカー">サッカー</option>
+<option value="ダーツ">ダーツ</option>
 <option value="テニス">テニス</option>
 <option value="バスケットボール">バスケットボール</option>
 <option value="バドミントン">バドミントン</option>
@@ -32,20 +33,22 @@
 <option value="モータースポーツ">モータースポーツ</option>
 <option value="ラグビーユニオン">ラグビーユニオン</option>
 <option value="ラグビーリーグ">ラグビーリーグ</option>
+<option value="卓球">卓球</option>
 <option value="総合格闘技">総合格闘技</option>
 <option value="自転車競技">自転車競技</option>
 <option value="野球">野球</option>
 </select><br/>
 リーグで検索:<select id="tournament" style="margin-bottom: 0.5em;"><option value="全て">全て</option>
 <option value="AIBA世界ボクシング選手権" class="ボクシング">AIBA世界ボクシング選手権</option>
+<option value="ATTU" class="卓球">ATTU</option>
 <option value="BWFグランプリ" class="バドミントン">BWFグランプリ</option>
 <option value="EFC" class="総合格闘技">EFC</option>
-<option value="EPL" class="サッカー">EPL</option>
 <option value="F1" class="モータースポーツ">F1</option>
 <option value="F2" class="モータースポーツ">F2</option>
 <option value="FIBA AmeriCup" class="バスケットボール">FIBA AmeriCup</option>
 <option value="FIBA男子ユーロバスケ" class="バスケットボール">FIBA男子ユーロバスケ</option>
 <option value="GP3" class="モータースポーツ">GP3</option>
+<option value="ITTU" class="卓球">ITTU</option>
 <option value="J1リーグ" class="サッカー">J1リーグ</option>
 <option value="J2リーグ" class="サッカー">J2リーグ</option>
 <option value="J3リーグ" class="サッカー">J3リーグ</option>
@@ -64,9 +67,13 @@
 <option value="W杯北中米カリブ海予選" class="サッカー">W杯北中米カリブ海予選</option>
 <option value="W杯南米予選" class="サッカー">W杯南米予選</option>
 <option value="W杯欧州予選" class="サッカー">W杯欧州予選</option>
+<option value="アビバ・プレミアシップ" class="ラグビーユニオン">アビバ・プレミアシップ</option>
+<option value="コパ・スダメリカーナ" class="サッカー">コパ・スダメリカーナ</option>
 <option value="セリエA" class="サッカー">セリエA</option>
+<option value="チャンピオンシップ・リーグ・ダーツ" class="ダーツ">チャンピオンシップ・リーグ・ダーツ</option>
 <option value="ツアー・オブ・アルバータ" class="自転車競技">ツアー・オブ・アルバータ</option>
 <option value="ツアー・オブ・ブリテン" class="自転車競技">ツアー・オブ・ブリテン</option>
+<option value="デビスカップ" class="テニス">デビスカップ</option>
 <option value="トップリーグ" class="ラグビーユニオン">トップリーグ</option>
 <option value="ブラジル全国選手権" class="サッカー">ブラジル全国選手権</option>
 <option value="ブンデスリーガ" class="サッカー">ブンデスリーガ</option>
@@ -125,6 +132,7 @@
 <tr><td class="date">21:30</td><td class="title">ブリュッセル・サイクリング・クラシック</td><td class="genre">自転車競技</td><td class="tournament">UCIヨーロッパツアー</td><td class="misc">実況：別府始 解説：鈴木太地</td></tr>
 <tr><td class="date">22:00</td><td class="title">サラセンズ vs ノーサンプトン</td><td class="genre">ラグビーユニオン</td><td class="tournament">プレミアシップ</td><td class="misc"></td></tr>
 <tr><td class="date">22:30</td><td class="title">ギリシャ vs フランス</td><td class="genre">バスケットボール</td><td class="tournament">FIBA男子ユーロバスケ</td><td class="misc"></td></tr>
+<tr><td class="date">23:00</td><td class="title">イタリア：レース1</td><td class="genre">モータースポーツ</td><td class="tournament">F2</td><td class="misc">実況：市川勝也 解説：小倉茂徳</td></tr>
 <tr><td class="date">23:00</td><td class="title">ワスプス vs セール・シャークス</td><td class="genre">ラグビーユニオン</td><td class="tournament">プレミアシップ</td><td class="misc">実況：林正浩　解説：吉田明</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>9月3日（日曜日）</b></td></tr>
 <tr><td class="date">00:50</td><td class="title">イタリア - レース 1</td><td class="genre">モータースポーツ</td><td class="tournament">GP3</td><td class="misc">実況：サッシャ 解説：小倉茂徳</td></tr>
@@ -141,7 +149,7 @@
 <tr><td class="date">03:45</td><td class="title">ウェールズ vs オーストリア</td><td class="genre">サッカー</td><td class="tournament">W杯欧州予選</td><td class="misc">実況：安井成行 解説：林健太郎</td></tr>
 <tr><td class="date">04:00</td><td class="title">ファイトナイト - ストルーフェ vs ヴォルコフ</td><td class="genre">総合格闘技</td><td class="tournament">UFC</td><td class="misc">実況：髙柳謙一　解説：水垣偉弥　同時通訳：小池瑞香</td></tr>
 <tr><td class="date">04:40</td><td class="title">パドレス vs ドジャース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
-<tr><td class="date">06:00</td><td class="title">ステージ2: スプルースグローブ</td><td class="genre">自転車競技</td><td class="tournament">ツアー・オブ・アルバータ</td><td class="misc"></td></tr>
+<tr><td class="date">06:00</td><td class="title">ステージ2: スプルースグローブ</td><td class="genre">自転車競技</td><td class="tournament">ツアー・オブ・アルバータ</td><td class="misc">実況：吉田ボイス 解説：別府始</td></tr>
 <tr><td class="date">06:30</td><td class="title">アメリカ vs ヴァージン諸島</td><td class="genre">バスケットボール</td><td class="tournament">FIBA AmeriCup</td><td class="misc"></td></tr>
 <tr><td class="date">08:05</td><td class="title">オリオールズ vs ブルージェイズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：立川志の春 解説：大冨真一郎</td></tr>
 <tr><td class="date">09:00</td><td class="title">アルゼンチン vs メキシコ</td><td class="genre">バスケットボール</td><td class="tournament">FIBA AmeriCup</td><td class="misc"></td></tr>
@@ -283,7 +291,7 @@
 <tr><td class="date">19:00</td><td class="title">サントリー vs アークス</td><td class="genre">ラグビーユニオン</td><td class="tournament">トップリーグ</td><td class="misc"></td></tr>
 <tr><td class="date">20:00</td><td class="title">レアルマドリード vs レバンテUD</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc"></td></tr>
 <tr><td class="date">20:00</td><td class="title">インゴルシュタット vs FCエルツゲビルゲ・アウエ</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ2部</td><td class="misc"></td></tr>
-<tr><td class="date">20:30</td><td class="title">マンチェスターC vs リヴァプール</td><td class="genre">サッカー</td><td class="tournament">EPL</td><td class="misc"></td></tr>
+<tr><td class="date">20:30</td><td class="title">マンチェスターC vs リヴァプール</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc"></td></tr>
 <tr><td class="date">21:15</td><td class="title">ステージ7: ヘメル・ヘムステッド ～ チェルトナム</td><td class="genre">自転車競技</td><td class="tournament">ツアー・オブ・ブリテン</td><td class="misc"></td></tr>
 <tr><td class="date">22:00</td><td class="title">バース ラグビー vs サラセンズ</td><td class="genre">ラグビーユニオン</td><td class="tournament">プレミアシップ</td><td class="misc"></td></tr>
 <tr><td class="date">22:30</td><td class="title">アウクスブルク vs ケルン</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
@@ -291,16 +299,16 @@
 <tr><td class="date">22:30</td><td class="title">メンヒェングラートバッハ vs フランクフルト</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
 <tr><td class="date">22:30</td><td class="title">マインツ vs レバークーゼン</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
 <tr><td class="date">22:30</td><td class="title">ヴォルフスブルク vs ハノーファー</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">23:00</td><td class="title">アーセナル vs ボーンマス</td><td class="genre">サッカー</td><td class="tournament">EPL</td><td class="misc"></td></tr>
-<tr><td class="date">23:00</td><td class="title">レスター vs チェルシー</td><td class="genre">サッカー</td><td class="tournament">EPL</td><td class="misc"></td></tr>
+<tr><td class="date">23:00</td><td class="title">アーセナル vs ボーンマス</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc"></td></tr>
+<tr><td class="date">23:00</td><td class="title">レスター vs チェルシー</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc"></td></tr>
 <tr><td class="date">23:00</td><td class="title">サウサンプトン vs ワトフォード</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc"></td></tr>
 <tr><td class="date">23:15</td><td class="title">バレンシア vs アトレティコ</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc"></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>9月10日（日曜日）</b></td></tr>
 <tr><td class="date">00:00</td><td class="title">ニース vs モナコ</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc"></td></tr>
 <tr><td class="date">01:00</td><td class="title">シャルケ vs シュトゥットガルト</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
-<tr><td class="date">01:30</td><td class="title">ストーク vs マンチェスターU</td><td class="genre">サッカー</td><td class="tournament">EPL</td><td class="misc"></td></tr>
 <tr><td class="date">01:30</td><td class="title">セビリア vs エイバル</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc"></td></tr>
 <tr><td class="date">01:30</td><td class="title">ホッフェンハイム vs バイエルン・ミュンヘン</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
+<tr><td class="date">01:30</td><td class="title">ストーク vs マンチェスターU</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc"></td></tr>
 <tr><td class="date">02:07</td><td class="title">ブルージェイズ vs タイガース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
 <tr><td class="date">03:00</td><td class="title">ワースラント・ベーフェレン vs オイペン</td><td class="genre">サッカー</td><td class="tournament">ベルギー1部</td><td class="misc"></td></tr>
 <tr><td class="date">03:45</td><td class="title">サンプドリア vs ローマ</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
@@ -336,74 +344,173 @@
 <tr><td class="date">22:30</td><td class="title">ヴォルフスブルク vs ハノーファー</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
 <tr><td class="date">23:00</td><td class="title">ウスター ウォーリアーズ vs ワスプス</td><td class="genre">ラグビーユニオン</td><td class="tournament">プレミアシップ</td><td class="misc"></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>9月11日（月曜日）</b></td></tr>
-<tr><td class="date">01:00</td><td class="title">ベネヴェント vs トリノ</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
-<tr><td class="date">01:00</td><td class="title">シャルケ vs シュトゥットガルト</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc">日本語実況・解説あり </td></tr>
-<tr><td class="date">02:00</td><td class="title">レイダース vs タイタンズ：第1週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
-<tr><td class="date">02:00</td><td class="title">バッカニアーズ at ドルフィンズ：第1週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
+<tr><td class="date">01:00</td><td class="title">ベネヴェント vs FC トリノ</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
+<tr><td class="date">01:00</td><td class="title">ユベントス vs キエーボ (ディレイ配信)</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
+<tr><td class="date">01:00</td><td class="title">シャルケ vs シュトゥットガルト</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
+<tr><td class="date">02:00</td><td class="title">オークランド・レイダース vs テネシー・タイタンズ</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
+<tr><td class="date">02:00</td><td class="title">レッドゾーン - 第1週目</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
+<tr><td class="date">02:00</td><td class="title">バッカニアーズ vs ドルフィンズ</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
 <tr><td class="date">02:07</td><td class="title">ブルージェイズ vs タイガース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
 <tr><td class="date">02:35</td><td class="title">ブレーブス vs マーリンズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
-<tr><td class="date">03:20</td><td class="title">カブス vs ブルワーズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">日本語実況・解説あり</td></tr>
+<tr><td class="date">03:20</td><td class="title">カブス vs ブルワーズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：上野智広　解説：豊浦彰太郎</td></tr>
+<tr><td class="date">03:20</td><td class="title">グランプリ・シクリスト・ド・モンレアル</td><td class="genre">自転車競技</td><td class="tournament">UCIワールドツアー</td><td class="misc">実況：木下貴道　解説：別府始</td></tr>
 <tr><td class="date">03:45</td><td class="title">ボローニャ vs ナポリ</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
-<tr><td class="date">04:00</td><td class="title">マルセイユ vs レンヌ</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc">日本語実況あり </td></tr>
+<tr><td class="date">04:00</td><td class="title">マルセイユ vs レンヌ</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc"></td></tr>
 <tr><td class="date">04:00</td><td class="title">サントス vs コリンチャンス</td><td class="genre">サッカー</td><td class="tournament">ブラジル全国選手権</td><td class="misc"></td></tr>
 <tr><td class="date">04:05</td><td class="title">レンジャーズ vs ヤンキース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
-<tr><td class="date">05:10</td><td class="title">ドジャース vs ロッキーズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">05:25</td><td class="title">シーホークス at パッカーズ：第1週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
-<tr><td class="date">09:30</td><td class="title">ジャイアンツ AT カウボーイズ：第1週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc">実況：上野智広 解説：大出洋之</td></tr>
-<tr><td class="date">11:00</td><td class="title">HP Japan Women's Open Women Single - 初日：コート1</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
-<tr><td class="date">11:00</td><td class="title">HP Japan Women's Open Women Single - 初日：コート3</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
+<tr><td class="date">05:10</td><td class="title">ドジャース vs ロッキーズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：林正浩　解説：新谷博</td></tr>
+<tr><td class="date">05:25</td><td class="title">シーホークス vs パッカーズ</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
+<tr><td class="date">09:30</td><td class="title">ジャイアンツ vs カウボーイズ</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc">実況：上野智広　解説：大出洋之</td></tr>
+<tr><td class="date">11:00</td><td class="title">ジャパンウィメンズオープン - 初日 - コート1</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
+<tr><td class="date">11:00</td><td class="title">ジャパンウィメンズオープン - 初日 - コート3</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
+<tr><td class="date">22:00</td><td class="title">ラツィオ vs ミラン (ディレイ配信)</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>9月12日（火曜日）</b></td></tr>
 <tr><td class="date">08:07</td><td class="title">ブルージェイズ vs オリオールズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
-<tr><td class="date">08:10</td><td class="title">セインツ AT バイキングス</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc">実況：有馬隼人 解説：生沢浩</td></tr>
-<tr><td class="date">08:10</td><td class="title">レイズ vs ヤンキース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：谷口廣明 解説：椎屋博幸</td></tr>
+<tr><td class="date">08:10</td><td class="title">セインツ vs バイキングス</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc">実況：有馬隼人　解説：生沢浩</td></tr>
+<tr><td class="date">08:10</td><td class="title">レイズ vs ヤンキース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：谷口廣明　解説：椎屋博幸</td></tr>
+<tr><td class="date">09:00</td><td class="title">Raw® - アナハイム</td><td class="genre">WWE</td><td class="tournament">WWE</td><td class="misc">実況：土居壮　解説：斎藤文彦</td></tr>
 <tr><td class="date">09:05</td><td class="title">レンジャーズ vs マリナーズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
 <tr><td class="date">10:40</td><td class="title">Dバックス vs ロッキーズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
-<tr><td class="date">11:00</td><td class="title">HP Japan Women's Open Women Single - 第2日：コート1</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
-<tr><td class="date">11:00</td><td class="title">HP Japan Women's Open Women Single - 第2日：コート3</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
-<tr><td class="date">11:00</td><td class="title">HP Japan Women's Open Women Single - 第2日：コート4</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
-<tr><td class="date">11:15</td><td class="title">ジャイアンツ vs ドジャース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：林正浩 解説：多村仁志</td></tr>
-<tr><td class="date">18:00</td><td class="title">カープ vs ベイスターズ</td><td class="genre">野球</td><td class="tournament">NPB</td><td class="misc">実況：林正浩 解説：川口和久</td></tr>
+<tr><td class="date">11:00</td><td class="title">ジャパンウィメンズオープン - 第2日 - コート1</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
+<tr><td class="date">11:00</td><td class="title">ジャパンウィメンズオープン - 第2日 - コート3</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
+<tr><td class="date">11:00</td><td class="title">ジャパンウィメンズオープン - 第2日 - コート4</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
+<tr><td class="date">11:15</td><td class="title">ジャイアンツ vs ドジャース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：林正浩　解説：多村仁志</td></tr>
+<tr><td class="date">11:20</td><td class="title">チャージャーズ vs ブロンコス</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc">実況：原大悟　解説：井上友綱</td></tr>
+<tr><td class="date">18:00</td><td class="title">カープ vs ベイスターズ</td><td class="genre">野球</td><td class="tournament">NPB</td><td class="misc">実況：林正浩　解説：川口和久</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>9月13日（水曜日）</b></td></tr>
 <tr><td class="date">08:05</td><td class="title">フィリーズ vs マーリンズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
 <tr><td class="date">08:07</td><td class="title">ブルージェイズ vs オリオールズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
 <tr><td class="date">08:10</td><td class="title">レイズ vs ヤンキース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
-<tr><td class="date">09:00</td><td class="title">SMACKDOWN #943</td><td class="genre">WWE</td><td class="tournament">WWE</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">09:05</td><td class="title">カブス vs メッツ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：立川志の春 解説：福島良一</td></tr>
-<tr><td class="date">11:00</td><td class="title">HP Japan Women's Open Women Single - 第3日：コート1</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
-<tr><td class="date">11:00</td><td class="title">HP Japan Women's Open Women Single - 第3日：コート3</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
-<tr><td class="date">11:15</td><td class="title">ジャイアンツ vs ドジャース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：星野大輔 解説：蛭間豊章</td></tr>
-<tr><td class="date">18:00</td><td class="title">カープ vs ベイスターズ</td><td class="genre">野球</td><td class="tournament">NPB</td><td class="misc">実況：上野智広 解説：多村仁志</td></tr>
+<tr><td class="date">09:00</td><td class="title">Smackdown® LIVE - ラスベガス</td><td class="genre">WWE</td><td class="tournament">WWE</td><td class="misc">実況：高橋大輔　解説：斎藤文彦</td></tr>
+<tr><td class="date">09:05</td><td class="title">カブス vs メッツ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：立川志の春　解説：福島良一</td></tr>
+<tr><td class="date">11:00</td><td class="title">ジャパンウィメンズオープン - 第3日 - コート1</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
+<tr><td class="date">11:00</td><td class="title">ジャパンウィメンズオープン - 第3日 - コート3</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
+<tr><td class="date">11:15</td><td class="title">ジャイアンツ vs ドジャース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：星野大輔　解説：蛭間豊章</td></tr>
+<tr><td class="date">18:00</td><td class="title">カープ vs ベイスターズ</td><td class="genre">野球</td><td class="tournament">NPB</td><td class="misc">実況：上野智広　解説：多村仁志</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>9月14日（木曜日）</b></td></tr>
+<tr><td class="date">07:15</td><td class="title">シャペコエンセ vs フラメンゴ</td><td class="genre">サッカー</td><td class="tournament">コパ・スダメリカーナ</td><td class="misc"></td></tr>
+<tr><td class="date">08:05</td><td class="title">フィリーズ vs マーリンズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
 <tr><td class="date">08:07</td><td class="title">ブルージェイズ vs オリオールズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
-<tr><td class="date">09:05</td><td class="title">カブス vs メッツ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：熊谷龍一 解説：斉藤和巳 </td></tr>
-<tr><td class="date">11:00</td><td class="title">HP Japan Women's Open Women Single - 第4日：コート1</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
-<tr><td class="date">11:00</td><td class="title">HP Japan Women's Open Women Single - 第4日：コート3</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
-<tr><td class="date">11:15</td><td class="title">ジャイアンツ vs ドジャース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：鈴木光裕 解説：小島克典</td></tr>
-<tr><td class="date">18:00</td><td class="title">カープ vs ベイスターズ</td><td class="genre">野球</td><td class="tournament">NPB</td><td class="misc">実況：上野智広 解説：苫篠賢治</td></tr>
+<tr><td class="date">08:10</td><td class="title">レイズ vs ヤンキース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
+<tr><td class="date">09:05</td><td class="title">カブス vs メッツ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：熊谷龍一　解説：斉藤和巳</td></tr>
+<tr><td class="date">11:00</td><td class="title">ジャパンウィメンズオープン - 第4日 - コート1</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
+<tr><td class="date">11:00</td><td class="title">ジャパンウィメンズオープン - 第4日 - コート3</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
+<tr><td class="date">11:15</td><td class="title">ジャイアンツ vs ドジャース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：鈴木光裕　解説：小島克典</td></tr>
+<tr><td class="date">18:00</td><td class="title">カープ vs ベイスターズ</td><td class="genre">野球</td><td class="tournament">NPB</td><td class="misc">実況：上野智広　解説：苫篠賢治</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>9月15日（金曜日）</b></td></tr>
+<tr><td class="date">00:00</td><td class="title">BMWチャンピオンシップ - 初日</td><td class="genre">ゴルフ</td><td class="tournament">PGAツアー</td><td class="misc">実況：山田透</td></tr>
 <tr><td class="date">02:35</td><td class="title">レッドソックス vs アスレチックス</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
-<tr><td class="date">08:05</td><td class="title">ヤンキース vs オリオールズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：松本圭祐 解説：オカモト"MOBY"タクヤ</td></tr>
-<tr><td class="date">11:00</td><td class="title">HP Japan Women's Open Women Single - 準々決勝</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
-<tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>9月16日（土曜日）</b></td></tr>
-<tr><td class="date">03:20</td><td class="title">カブス vs カージナルス</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
-<tr><td class="date">03:30</td><td class="title">ハノーファー vs ハンブルガーSV</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc">日本語実況あり</td></tr>
-<tr><td class="date">08:10</td><td class="title">マーリンズ vs ブルワーズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
-<tr><td class="date">09:00</td><td class="title">栃木 vs G大23</td><td class="genre">サッカー</td><td class="tournament">J3リーグ</td><td class="misc">日本語実況あり</td></tr>
-<tr><td class="date">09:00</td><td class="title">琉球 vs 鹿児島</td><td class="genre">サッカー</td><td class="tournament">J3リーグ</td><td class="misc">日本語実況あり</td></tr>
+<tr><td class="date">08:05</td><td class="title">ヤンキース vs オリオールズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：松本圭祐　解説：オカモトMOBYタクヤ</td></tr>
+<tr><td class="date">08:05</td><td class="title">フィリーズ vs マーリンズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
+<tr><td class="date">09:05</td><td class="title">カブス vs メッツ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：鈴木光裕　解説：斉藤和巳</td></tr>
 <tr><td class="date">09:10</td><td class="title">ツインズ vs ブルージェイズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
-<tr><td class="date">18:00</td><td class="title">新潟 vs 鹿島</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">18:00</td><td class="title">大宮 vs G大阪</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">18:00</td><td class="title">清水 vs 川崎F</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">18:00</td><td class="title">横浜FC vs 東京V</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">18:00</td><td class="title">山口 vs 岐阜</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">18:00</td><td class="title">千葉 vs 水戸</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">18:00</td><td class="title">町田 vs 山形</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">18:30</td><td class="title">広島 vs C大阪</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">19:00</td><td class="title">シンガポールGP：フリー走行3回目</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">19:00</td><td class="title">神戸 vs 札幌</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">19:00</td><td class="title">横浜FM vs 柏</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">19:00</td><td class="title">鳥栖 vs 甲府</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">19:00</td><td class="title">FC東京 vs 仙台</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">19:00</td><td class="title">湘南 vs 讃岐</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
-<tr><td class="date">19:00</td><td class="title">大分 vs 長崎</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
+<tr><td class="date">09:25</td><td class="title">テキサンズ vs ベンガルズ</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc">実況：上野智広　解説：生沢浩</td></tr>
+<tr><td class="date">11:00</td><td class="title">WGプレーオフ: 日本 vs ブラジル - 初日</td><td class="genre">テニス</td><td class="tournament">デビスカップ</td><td class="misc"></td></tr>
+<tr><td class="date">11:00</td><td class="title">ジャパンウィメンズオープン - 第5日</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
+<tr><td class="date">17:00</td><td class="title">ヨーロッパチャンピオンシップ - 初日</td><td class="genre">卓球</td><td class="tournament">ITTU</td><td class="misc"></td></tr>
+<tr><td class="date">19:00</td><td class="title">シンガポール GP - フリー走行1回目</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td class="misc"></td></tr>
+<tr><td class="date">20:00</td><td class="title">準決勝: フランス vs セルビア - 初日</td><td class="genre">テニス</td><td class="tournament">デビスカップ</td><td class="misc"></td></tr>
+<tr><td class="date">21:00</td><td class="title">準決勝: ベルギー vs オーストラリア - 初日</td><td class="genre">テニス</td><td class="tournament">デビスカップ</td><td class="misc"></td></tr>
+<tr><td class="date">22:30</td><td class="title">シンガポール GP - フリー走行2回目</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td class="misc"></td></tr>
+<tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>9月16日（土曜日）</b></td></tr>
+<tr><td class="date">00:00</td><td class="title">BMWチャンピオンシップ - 第2日</td><td class="genre">ゴルフ</td><td class="tournament">PGAツアー</td><td class="misc">実況：山田透</td></tr>
+<tr><td class="date">01:30</td><td class="title">ウニオン・ベルリン vs ブラウンシュヴァイク</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ2部</td><td class="misc"></td></tr>
+<tr><td class="date">02:00</td><td class="title">アンジェ vs メス</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc"></td></tr>
+<tr><td class="date">03:20</td><td class="title">カブス vs カージナルス</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
+<tr><td class="date">03:30</td><td class="title">ハノーファー vs ハンブルガー</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
+<tr><td class="date">04:00</td><td class="title">エイバル vs レガネス</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc"></td></tr>
+<tr><td class="date">08:05</td><td class="title">ヤンキース vs オリオールズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：中山正敏　解説：成瀬英樹</td></tr>
+<tr><td class="date">08:05</td><td class="title">ナショナルズ vs ドジャース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：上野智広　解説：新谷博</td></tr>
+<tr><td class="date">08:10</td><td class="title">マーリンズ vs ブルワーズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
+<tr><td class="date">09:10</td><td class="title">ツインズ vs ブルージェイズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
+<tr><td class="date">11:00</td><td class="title">WGプレーオフ: 日本 vs ブラジル - 第2日</td><td class="genre">テニス</td><td class="tournament">デビスカップ</td><td class="misc"></td></tr>
+<tr><td class="date">14:00</td><td class="title">カープ vs スワローズ</td><td class="genre">野球</td><td class="tournament">NPB</td><td class="misc">実況：林正浩　解説：斉藤和巳</td></tr>
+<tr><td class="date">14:00</td><td class="title">松本山雅FC vs ザスパクサツ群馬</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">14:00</td><td class="title">ジャパンウィメンズオープン - 第6日</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
+<tr><td class="date">14:30</td><td class="title">アジア卓球選手権 - 第4日</td><td class="genre">卓球</td><td class="tournament">ATTU</td><td class="misc"></td></tr>
+<tr><td class="date">16:00</td><td class="title">徳島ヴォルティス vs ファジアーノ岡山</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">17:00</td><td class="title">ヨーロッパ卓球選手権 - 第2日</td><td class="genre">卓球</td><td class="tournament">ITTU</td><td class="misc"></td></tr>
+<tr><td class="date">17:00</td><td class="title">藤枝MYFC vs グルージャ盛岡</td><td class="genre">サッカー</td><td class="tournament">J3リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">18:00</td><td class="title">Jリーグゾーン</td><td class="genre">サッカー</td><td class="tournament">Jリーグ</td><td class="misc"></td></tr>
+<tr><td class="date">18:00</td><td class="title">アルビレックス新潟 vs 鹿島アントラーズ</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">18:00</td><td class="title">大宮アルディージャ vs ガンバ大阪</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">18:00</td><td class="title">清水エスパルス vs 川崎フロンターレ</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">18:00</td><td class="title">FC町田ゼルビア vs モンテディオ山形</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">18:00</td><td class="title">ジェフユナイテッド市原・千葉 vs 水戸ホーリーホック</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">18:00</td><td class="title">レノファ山口FC vs FC岐阜</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">18:00</td><td class="title">横浜FC vs 東京ヴェルディ</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">18:00</td><td class="title">FC琉球 vs 鹿児島ユナイテッドFC</td><td class="genre">サッカー</td><td class="tournament">J3リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">18:00</td><td class="title">栃木SC vs ガンバ大阪 U-23</td><td class="genre">サッカー</td><td class="tournament">J3リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">18:30</td><td class="title">サンフレッチェ広島 vs セレッソ大阪</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">19:00</td><td class="title">シンガポール GP - フリー走行3回目</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td class="misc"></td></tr>
+<tr><td class="date">19:00</td><td class="title">FC東京 vs ベガルタ仙台</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">19:00</td><td class="title">サガン鳥栖 vs ヴァンフォーレ甲府</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">19:00</td><td class="title">ヴィッセル神戸 vs 北海道コンサドーレ札幌</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">19:00</td><td class="title">横浜F・マリノス vs 柏レイソル</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">19:00</td><td class="title">大分トリニータ vs V・ファーレン長崎</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">19:00</td><td class="title">湘南ベルマーレ vs カマタマーレ讃岐</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">19:30</td><td class="title">アジア卓球選手権 - 第5日</td><td class="genre">卓球</td><td class="tournament">ATTU</td><td class="misc"></td></tr>
+<tr><td class="date">20:00</td><td class="title">ザンクトパウリ vs インゴルシュタット</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ2部</td><td class="misc"></td></tr>
+<tr><td class="date">20:30</td><td class="title">クリスタル・パレス vs サウサンプトン</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc"></td></tr>
+<tr><td class="date">21:00</td><td class="title">準決勝: フランス vs セルビア - 第2日</td><td class="genre">テニス</td><td class="tournament">デビスカップ</td><td class="misc"></td></tr>
+<tr><td class="date">21:15</td><td class="title">初日 アフタヌーンセッション</td><td class="genre">ダーツ</td><td class="tournament">チャンピオンシップ・リーグ・ダーツ</td><td class="misc"></td></tr>
+<tr><td class="date">22:00</td><td class="title">シンガポール GP - 予選</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td class="misc"></td></tr>
+<tr><td class="date">22:00</td><td class="title">シンガポール GP - 予選: オンボード・カメラ</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td class="misc"></td></tr>
+<tr><td class="date">22:00</td><td class="title">シンガポール GP - 予選: ピットレーンカメラ</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td class="misc"></td></tr>
+<tr><td class="date">22:00</td><td class="title">クロトーネ vs インテル</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
+<tr><td class="date">22:00</td><td class="title">準決勝: ベルギー vs オーストラリア - 第2日</td><td class="genre">テニス</td><td class="tournament">デビスカップ</td><td class="misc"></td></tr>
+<tr><td class="date">22:30</td><td class="title">バイエルン vs マインツ</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
+<tr><td class="date">22:30</td><td class="title">フランクフルト vs アウクスブルク</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
+<tr><td class="date">22:30</td><td class="title">シュトゥットガルト vs ヴォルフスブルク</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
+<tr><td class="date">22:30</td><td class="title">ヴェルダー・ブレーメン vs シャルケ</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
+<tr><td class="date">23:00</td><td class="title">ハダースフィールド vs レスター</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc"></td></tr>
+<tr><td class="date">23:00</td><td class="title">リヴァプール vs バーンリー</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc"></td></tr>
+<tr><td class="date">23:15</td><td class="title">ヘタフェCF vs バルセロナ</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc"></td></tr>
+<tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>9月17日（日曜日）</b></td></tr>
+<tr><td class="date">00:00</td><td class="title">モナコ vs ストラスブール・アルザス</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc"></td></tr>
+<tr><td class="date">01:00</td><td class="title">フィオレンティーナ vs ボローニャ</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
+<tr><td class="date">01:30</td><td class="title">ライプツィヒ vs ボルシアMG</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
+<tr><td class="date">02:05</td><td class="title">カブス vs カージナルス</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
+<tr><td class="date">02:05</td><td class="title">ナショナルズ vs ドジャース</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
+<tr><td class="date">02:30</td><td class="title">初日 イブニングセッション</td><td class="genre">ダーツ</td><td class="tournament">チャンピオンシップ・リーグ・ダーツ</td><td class="misc"></td></tr>
+<tr><td class="date">03:00</td><td class="title">シャルルロワ vs ワースラント・ベーフェレン</td><td class="genre">サッカー</td><td class="tournament">ベルギー1部</td><td class="misc"></td></tr>
+<tr><td class="date">03:45</td><td class="title">ローマ vs エラス・ヴェローナ</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
+<tr><td class="date">03:45</td><td class="title">アトレティコ・マドリード vs マラガ</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc"></td></tr>
+<tr><td class="date">05:05</td><td class="title">ヤンキース vs オリオールズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc"></td></tr>
+<tr><td class="date">05:30</td><td class="title">ニューカッスル vs サラセンズ</td><td class="genre">ラグビーユニオン</td><td class="tournament">プレミアシップ</td><td class="misc"></td></tr>
+<tr><td class="date">07:00</td><td class="title">ボタフォゴ vs サントス</td><td class="genre">サッカー</td><td class="tournament">ブラジル全国選手権</td><td class="misc"></td></tr>
+<tr><td class="date">08:10</td><td class="title">マーリンズ vs ブルワーズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：北川義隆　解説：宇根夏樹</td></tr>
+<tr><td class="date">08:10</td><td class="title">ツインズ vs ブルージェイズ</td><td class="genre">野球</td><td class="tournament">MLB</td><td class="misc">実況：矢野吉彦　解説：大冨真一郎</td></tr>
+<tr><td class="date">11:00</td><td class="title">ファイトナイト - ロックフォールド vs ブランチ</td><td class="genre">総合格闘技</td><td class="tournament">UFC</td><td class="misc"></td></tr>
+<tr><td class="date">11:00</td><td class="title">WGプレーオフ: 日本 vs ブラジル - 第3日</td><td class="genre">テニス</td><td class="tournament">デビスカップ</td><td class="misc"></td></tr>
+<tr><td class="date">13:00</td><td class="title">アスルクラロ沼津 vs カターレ富山</td><td class="genre">サッカー</td><td class="tournament">J3リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">13:00</td><td class="title">福島ユナイテッドFC vs ガイナーレ鳥取</td><td class="genre">サッカー</td><td class="tournament">J3リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">13:00</td><td class="title">Y.S.C.C.横浜 vs ブラウブリッツ秋田</td><td class="genre">サッカー</td><td class="tournament">J3リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">13:30</td><td class="title">カープ vs スワローズ</td><td class="genre">野球</td><td class="tournament">NPB</td><td class="misc">実況：林正浩　解説：川口和久</td></tr>
+<tr><td class="date">13:30</td><td class="title">アジア卓球選手権 - 第6日</td><td class="genre">卓球</td><td class="tournament">ATTU</td><td class="misc"></td></tr>
+<tr><td class="date">14:00</td><td class="title">FC東京 U-23 vs AC長野パルセイロ</td><td class="genre">サッカー</td><td class="tournament">J3リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">14:00</td><td class="title">ジャパンウィメンズオープン - 第7日</td><td class="genre">テニス</td><td class="tournament">WTAインターナショナル</td><td class="misc"></td></tr>
+<tr><td class="date">15:30</td><td class="title">セレッソ大阪 U-23 vs ギラヴァンツ北九州</td><td class="genre">サッカー</td><td class="tournament">J3リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">16:00</td><td class="title">ジュビロ磐田 vs 浦和レッズ</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">17:00</td><td class="title">ツエーゲン金沢 vs 名古屋グランパス</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">18:00</td><td class="title">アジア卓球選手権 - 第7日</td><td class="genre">卓球</td><td class="tournament">ATTU</td><td class="misc"></td></tr>
+<tr><td class="date">19:00</td><td class="title">Jリーグゾーン</td><td class="genre">サッカー</td><td class="tournament">Jリーグ</td><td class="misc"></td></tr>
+<tr><td class="date">19:00</td><td class="title">愛媛FC vs 京都サンガF.C.</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">19:00</td><td class="title">ロアッソ熊本 vs アビスパ福岡</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td class="misc"></td></tr>
+<tr><td class="date">20:00</td><td class="title">準決勝: フランス vs セルビア - 第3日</td><td class="genre">テニス</td><td class="tournament">デビスカップ</td><td class="misc"></td></tr>
+<tr><td class="date">20:30</td><td class="title">ホッフェンハイム vs ヘルタ・ベルリン</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
+<tr><td class="date">21:00</td><td class="title">シンガポール GP - レース</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td class="misc"></td></tr>
+<tr><td class="date">21:00</td><td class="title">シンガポール GP - レース: オンボード・カメラ</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td class="misc"></td></tr>
+<tr><td class="date">21:00</td><td class="title">シンガポール GP - レース: ピットレーンカメラ</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td class="misc"></td></tr>
+<tr><td class="date">21:00</td><td class="title">ヨーロッパ卓球選手権 - 第3日</td><td class="genre">卓球</td><td class="tournament">ITTU</td><td class="misc"></td></tr>
+<tr><td class="date">21:00</td><td class="title">準決勝: ベルギー vs オーストラリア - 第3日</td><td class="genre">テニス</td><td class="tournament">デビスカップ</td><td class="misc"></td></tr>
+<tr><td class="date">21:00</td><td class="title">第2日 アフタヌーンセッション</td><td class="genre">ダーツ</td><td class="tournament">チャンピオンシップ・リーグ・ダーツ</td><td class="misc"></td></tr>
+<tr><td class="date">21:30</td><td class="title">チェルシー vs アーセナル</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc"></td></tr>
+<tr><td class="date">22:00</td><td class="title">トリノ vs サンプドリア</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
+<tr><td class="date">22:00</td><td class="title">ナポリ vs ベネヴェント</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
+<tr><td class="date">22:00</td><td class="title">SPAL vs カリアリ</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
+<tr><td class="date">22:00</td><td class="title">アミアン vs マルセイユ</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc"></td></tr>
+<tr><td class="date">22:30</td><td class="title">レバークーゼン vs フライブルク</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
+<tr><td class="date">23:00</td><td class="title">ワスプス vs ハリクインズ</td><td class="genre">ラグビーユニオン</td><td class="tournament">アビバ・プレミアシップ</td><td class="misc">実況：谷口廣明</td></tr>
+<tr><td class="date">23:15</td><td class="title">ジローナFC vs セビリア</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc"></td></tr>
 </table></body></html>
