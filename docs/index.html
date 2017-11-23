@@ -20,8 +20,9 @@
 </head>
 <body>
 <p><a href="./sp/">スマホ向けにもう１パターン</a></p>
-<div style="margin-bottom: 1em">更新: 2017年11月23日 19:26 <a href="./changelog.html">更新履歴</a></div>
+<div style="margin-bottom: 1em">更新: 2017年11月24日 08:10 <a href="./changelog.html">更新履歴</a></div>
 ジャンルで検索：<select id="genre" style="margin-bottom: 0.5em;"><option value="全て">全て</option>
+<option value="Eスポーツ">Eスポーツ</option>
 <option value="WWE">WWE</option>
 <option value="アメフト">アメフト</option>
 <option value="サッカー">サッカー</option>
@@ -45,6 +46,7 @@
 リーグで検索:<select id="tournament" style="margin-bottom: 0.5em;"><option value="全て">全て</option>
 <option value="BWFグランプリシリーズ" class="バドミントン">BWFグランプリシリーズ</option>
 <option value="F1" class="モータースポーツ">F1</option>
+<option value="F1 eスポーツ・シリーズ" class="Eスポーツ">F1 eスポーツ・シリーズ</option>
 <option value="F2" class="モータースポーツ">F2</option>
 <option value="FEIワールドカップ" class="馬術">FEIワールドカップ</option>
 <option value="FIBA W杯アジア予選" class="バスケットボール">FIBA W杯アジア予選</option>
@@ -87,9 +89,6 @@
 <option value="北アイルランド・オープン" class="スヌーカー">北アイルランド・オープン</option>
 </select><br/><table>
 <tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>
-<tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>11月23日（木曜日）</b></td></tr>
-<tr><td class="date">15:10</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アジア予選</td><td>グループA：ニュージーランド vs 韓国</td><td></td></tr>
-<tr><td class="date">20:30</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アジア予選</td><td>グループA：中国 vs 香港</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>11月24日（金曜日）</b></td></tr>
 <tr><td class="date">00:00</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アジア予選</td><td>グループC：シリア vs ヨルダン</td><td></td></tr>
 <tr><td class="date">02:30</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>バイキングス AT ライオンズ：第12週</td><td>解説：波木健太郎 実況：上野智広</td></tr>
@@ -98,6 +97,7 @@
 <tr><td class="date">08:00</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アメリカ予選</td><td>グループA：ウルグアイ vs パナマ</td><td></td></tr>
 <tr><td class="date">08:45</td><td class="genre">サッカー</td><td class="tournament">コパ・スダメリカーナ</td><td>準決勝ファーストレグ：フラメンゴ vs ジュニオール</td><td></td></tr>
 <tr><td class="date">09:15</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アメリカ予選</td><td>グループA：アルゼンチン vs パラグアイ</td><td></td></tr>
+<tr><td class="date">09:30</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アメリカ予選</td><td>グループC：プエルトリコ vs アメリカ</td><td></td></tr>
 <tr><td class="date">10:30</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>ジャイアンツ AT レッドスキンズ：第12週</td><td>解説：井上友綱 実況：上野智広</td></tr>
 <tr><td class="date">12:00</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アメリカ予選</td><td>グループC：メキシコ vs キューバ</td><td></td></tr>
 <tr><td class="date">15:15</td><td class="genre">モータースポーツ</td><td class="tournament">GP3</td><td>アブダビ：フリー走行</td><td></td></tr>
@@ -175,11 +175,11 @@
 <tr><td class="date">00:00</td><td class="genre">ラグビーユニオン</td><td class="tournament">インターナショナルズ</td><td>イングランド vs サモア</td><td>解説：斉藤健仁 実況：林正浩</td></tr>
 <tr><td class="date">00:15</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>レアル・マドリード vs マラガ</td><td>解説：岩本輝雄 実況：谷口廣明</td></tr>
 <tr><td class="date">01:00</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td>レンヌ vs ナント</td><td></td></tr>
+<tr><td class="date">01:00</td><td class="genre">Eスポーツ</td><td class="tournament">F1 eスポーツ・シリーズ</td><td>アブダビ：決勝</td><td></td></tr>
 <tr><td class="date">02:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>サッスオーロ vs ヴェローナ</td><td></td></tr>
 <tr><td class="date">02:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>キエーヴォ vs SPAL</td><td></td></tr>
 <tr><td class="date">02:00</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アフリカ予選</td><td>グループC：エジプト vs アンゴラ</td><td></td></tr>
 <tr><td class="date">02:00</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アフリカ予選</td><td>グループA：チュニジア vs チャド</td><td></td></tr>
-<tr><td class="date">02:00</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アフリカ予選</td><td>グループA：カメルーン vs ギニア</td><td></td></tr>
 <tr><td class="date">02:15</td><td class="genre">ラグビーユニオン</td><td class="tournament">インターナショナルズ</td><td>ウェールズ vs ニュージーランド</td><td>解説：吉田明 実況：木下貴道</td></tr>
 <tr><td class="date">02:30</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td>ボルシアMG vs バイエルン</td><td>解説：ミムラユウスケ 実況：喜谷知純</td></tr>
 <tr><td class="date">02:30</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>リヴァプール vs チェルシー</td><td>解説：三浦俊也 実況：加藤暁</td></tr>
@@ -190,11 +190,12 @@
 <tr><td class="date">04:00</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td>ディジョン vs トゥールーズ</td><td></td></tr>
 <tr><td class="date">04:00</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td>カーン vs ボルドー</td><td></td></tr>
 <tr><td class="date">04:30</td><td class="genre">サッカー</td><td class="tournament">ベルギー・プロリーグ</td><td>ワースランド・ベフェレン vs シャルルロワ</td><td>実況：原大悟</td></tr>
+<tr><td class="date">04:30</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アフリカ予選</td><td>グループA：カメルーン vs ギニア</td><td>02:00開始の可能性あり</td></tr>
 <tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>カリアリ vs インテル</td><td>実況：田中雄介</td></tr>
 <tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>レバンテ vs アトレティコ</td><td>実況：中村義昭</td></tr>
 <tr><td class="date">05:00</td><td class="genre">馬術</td><td class="tournament">FEIワールドカップ</td><td>マドリード：障害馬術</td><td></td></tr>
 <tr><td class="date">12:00</td><td class="genre">ボクシング</td><td class="tournament">WCB</td><td>セルゲイ・コバレフ vs ビャチェスラフ・シャブランスキー</td><td></td></tr>
-<tr><td class="date">13:00</td><td class="genre">サッカー</td><td class="tournament">Jリーグ</td><td>Jリーグ・ゾーン</td><td>MC：サッシャ 解説：名良橋晃</td></tr>
+<tr><td class="date">13:00</td><td class="genre">サッカー</td><td class="tournament">Jリーグ</td><td>Jリーグ・ゾーン</td><td>MC：ハリー杉山 解説：名良橋晃</td></tr>
 <tr><td class="date">13:00</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td>鹿島 vs 柏</td><td>解説：戸田和幸 実況：八塚浩 リポーター：高城光代</td></tr>
 <tr><td class="date">13:00</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td>G大阪 vs 札幌</td><td>解説：木場昌雄 実況：平岩康佑 リポーター：藤原美佳</td></tr>
 <tr><td class="date">13:00</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td>C大阪 vs 神戸</td><td>解説：山口素弘 実況：若田部克彦 リポーター：池田愛恵里</td></tr>
@@ -235,7 +236,7 @@
 <tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>ウディネーゼ vs ナポリ</td><td>解説：細江克弥 実況：北川義隆</td></tr>
 <tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td>ニース vs リヨン</td><td></td></tr>
 <tr><td class="date">23:30</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td>ハンブルガーSV vs ホッフェンハイム</td><td>実況：中村義昭</td></tr>
-<tr><td class="date">23:30</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アフリカ予選</td><td>グループC：コンゴ民主共和国 vs アンゴラ</td><td></td></tr>
+<tr><td class="date">23:30</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アフリカ予選</td><td>グループC：モロッコ vs エジプト</td><td>11/27 02:00開始の可能性あり</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>11月27日（月曜日）</b></td></tr>
 <tr><td class="date">00:00</td><td class="genre">ラグビーユニオン</td><td class="tournament">プレミアシップ</td><td>サラセンズ vs エクセター</td><td>解説：岡村要 実況：谷口廣明</td></tr>
 <tr><td class="date">00:00</td><td class="genre">ラグビーユニオン</td><td class="tournament">プレミアシップ</td><td>ロンドン・アイリッシュ vs ワスプス</td><td></td></tr>
@@ -248,7 +249,7 @@
 <tr><td class="date">02:00</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td>ケルン vs ヘルタ</td><td>解説：戸田和幸 実況：喜谷知純</td></tr>
 <tr><td class="date">02:00</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アジア予選</td><td>グループC：ヨルダン vs レバノン</td><td></td></tr>
 <tr><td class="date">02:00</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アフリカ予選</td><td>グループA：ギニア vs 南アフリカ</td><td></td></tr>
-<tr><td class="date">02:00</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アフリカ予選</td><td>グループC：モロッコ vs エジプト</td><td></td></tr>
+<tr><td class="date">02:00</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アフリカ予選</td><td>グループC：コンゴ民主共和国 vs アンゴラ</td><td>11/26 23:30開始の可能性あり</td></tr>
 <tr><td class="date">02:00</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯ヨーロッパ予選</td><td>グループD：ルーマニア vs オランダ</td><td></td></tr>
 <tr><td class="date">02:00</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯ヨーロッパ予選</td><td>グループD：クロアチア vs イタリア</td><td></td></tr>
 <tr><td class="date">02:30</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯ヨーロッパ予選</td><td>グループC：リトアニア vs ポーランド</td><td></td></tr>
@@ -403,4 +404,8 @@
 <tr><td class="date">22:00</td><td class="genre">ハンドボール</td><td class="tournament">World Championship (W)</td><td>ロシア vs 日本</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>12月7日（木曜日）</b></td></tr>
 <tr><td class="date">04:00</td><td class="genre">プール</td><td class="tournament">モスコーニカップ</td><td>第3日</td><td></td></tr>
+<tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>12月8日（金曜日）</b></td></tr>
+<tr><td class="date">04:00</td><td class="genre">プール</td><td class="tournament">モスコーニカップ</td><td>第4日</td><td></td></tr>
+<tr><td class="date">10:25</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>セインツ at ファルコンズ：第14週</td><td>日本語実況あり</td></tr>
+<tr><td class="date">20:00</td><td class="genre">ハンドボール</td><td class="tournament">World Championship (W)</td><td>日本 vs チュニジア</td><td></td></tr>
 </table></body></html>
