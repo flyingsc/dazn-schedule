@@ -19,7 +19,7 @@
 <script src="../js/search_schedule.js"></script>
 </head>
 <body>
-<div style="margin-bottom: 1em">更新: 2017年11月24日 08:10 <a href="../changelog.html">更新履歴</a></div>
+<div style="margin-bottom: 1em">更新: 2017年11月24日 19:27 <a href="../changelog.html">更新履歴</a></div>
 ジャンルで検索：<select id="genre" style="margin-bottom: 1em;"><option value="全て">全て</option>
 <option value="Eスポーツ">Eスポーツ</option>
 <option value="WWE">WWE</option>
@@ -59,6 +59,7 @@
 <option value="J3リーグ" class="サッカー">J3リーグ</option>
 <option value="Jリーグ" class="サッカー">Jリーグ</option>
 <option value="NFL" class="アメフト">NFL</option>
+<option value="Super College" class="バレーボール">Super College</option>
 <option value="UFC" class="総合格闘技">UFC</option>
 <option value="V・チャレンジリーグI女子" class="バレーボール">V・チャレンジリーグI女子</option>
 <option value="V・プレミアリーグ女子" class="バレーボール">V・プレミアリーグ女子</option>
@@ -76,6 +77,7 @@
 <option value="セリエA" class="サッカー">セリエA</option>
 <option value="デビスカップ" class="テニス">デビスカップ</option>
 <option value="トップリーグ" class="ラグビーユニオン">トップリーグ</option>
+<option value="ブラジル全国選手権" class="サッカー">ブラジル全国選手権</option>
 <option value="ブンデスリーガ" class="サッカー">ブンデスリーガ</option>
 <option value="ブンデスリーガ2部" class="サッカー">ブンデスリーガ2部</option>
 <option value="プレミアシップ" class="ラグビーユニオン">プレミアシップ</option>
@@ -259,6 +261,7 @@
 <tr><td class="date">04:30</td><td class="title">グループA：カメルーン vs チュニジア</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アフリカ予選</td><td class="misc"></td></tr>
 <tr><td class="date">04:45</td><td class="title">バレンシア vs バルセロナ</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc">解説：小村徳男 実況：桑原学</td></tr>
 <tr><td class="date">05:00</td><td class="title">モナコ vs PSG</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc">解説：渡邉一平 実況：若月弘一郎</td></tr>
+<tr><td class="date">06:00</td><td class="title">フラメンゴ vs サントス</td><td class="genre">サッカー</td><td class="tournament">ブラジル全国選手権</td><td class="misc"></td></tr>
 <tr><td class="date">06:00</td><td class="title">グループA：パナマ vs アルゼンチン</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アメリカ予選</td><td class="misc"></td></tr>
 <tr><td class="date">06:25</td><td class="title">ブロンコス AT レイダース：第12週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
 <tr><td class="date">07:00</td><td class="title">グループC：アメリカ vs メキシコ</td><td class="genre">バスケットボール</td><td class="tournament">FIBA W杯アメリカ予選</td><td class="misc"></td></tr>
@@ -300,7 +303,7 @@
 <tr><td class="date">05:30</td><td class="title">4回戦セカンドレグ：セルタ vs エイバル</td><td class="genre">サッカー</td><td class="tournament">コパデルレイ</td><td class="misc">実況：桑原学</td></tr>
 <tr><td class="date">09:15</td><td class="title">準決勝セカンドレグ：インデペンディエンテ vs リベルタ</td><td class="genre">サッカー</td><td class="tournament">コパ・スダメリカーナ</td><td class="misc"></td></tr>
 <tr><td class="date">10:00</td><td class="title">SMACKDOWN #954</td><td class="genre">WWE</td><td class="tournament">WWE</td><td class="misc">解説：斎藤文彦 実況：市川勝也</td></tr>
-<tr><td class="date">19:05</td><td class="title">NPBウエスタン vs NPBイースタン</td><td class="genre">野球</td><td class="tournament">アジア・ウィンター・リーグ</td><td class="misc">日本語実況あり</td></tr>
+<tr><td class="date">19:05</td><td class="title">NPBウエスタン vs NPBイースタン</td><td class="genre">野球</td><td class="tournament">アジア・ウィンター・リーグ</td><td class="misc">実況：谷口廣明</td></tr>
 <tr><td class="date">19:30</td><td class="title">浦和 vs 川崎</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>11月30日（木曜日）</b></td></tr>
 <tr><td class="date">03:00</td><td class="title">メス vs マルセイユ</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc">実況：西達彦</td></tr>
@@ -314,9 +317,12 @@
 <tr><td class="date">05:00</td><td class="title">ストーク vs リヴァプール</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc">解説：清水英斗 実況：大庭荘介</td></tr>
 <tr><td class="date">05:00</td><td class="title">マンチェスター・C vs サウサンプトン</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc">解説：松原良香 実況：鈴木健</td></tr>
 <tr><td class="date">05:00</td><td class="title">4回戦：トリノ vs カルピ</td><td class="genre">サッカー</td><td class="tournament">コッパ・イタリア</td><td class="misc"></td></tr>
+<tr><td class="date">13:05</td><td class="title">NPBイースタン vs JABA</td><td class="genre">野球</td><td class="tournament">アジア・ウィンター・リーグ</td><td class="misc">実況：谷口廣明</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>12月1日（金曜日）</b></td></tr>
+<tr><td class="date">02:00</td><td class="title">4回戦：ウディネーゼ vs ペルージャ</td><td class="genre">サッカー</td><td class="tournament">コッパ・イタリア</td><td class="misc"></td></tr>
 <tr><td class="date">03:00</td><td class="title">4回戦セカンドレグ：アラベス vs ヘタフェ</td><td class="genre">サッカー</td><td class="tournament">コパデルレイ</td><td class="misc"></td></tr>
-<tr><td class="date">09:30</td><td class="title">準決勝セカンドレグ：ジュニオール vs フラメンゴ</td><td class="genre">サッカー</td><td class="tournament">コパ・スダメリカーナ</td><td class="misc"></td></tr>
+<tr><td class="date">10:00</td><td class="title">準々決勝：コート2</td><td class="genre">バレーボール</td><td class="tournament">Super College</td><td class="misc"></td></tr>
+<tr><td class="date">10:00</td><td class="title">準々決勝：コート1</td><td class="genre">バレーボール</td><td class="tournament">Super College</td><td class="misc"></td></tr>
 <tr><td class="date">10:25</td><td class="title">レッドスキンズ at カウボーイズ：第13週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc">日本語実況・解説あり</td></tr>
 <tr><td class="date">23:00</td><td class="title">男子77キロ級：セッション1</td><td class="genre">重量挙げ</td><td class="tournament">ウエイトリフティング世界選手権</td><td class="misc"></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>12月2日（土曜日）</b></td></tr>
@@ -325,6 +331,9 @@
 <tr><td class="date">04:30</td><td class="title">フライブルク vs ハンブルガーSV</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
 <tr><td class="date">04:45</td><td class="title">ナポリ vs ユヴェントス</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc">日本語実況・解説あり</td></tr>
 <tr><td class="date">04:45</td><td class="title">ディジョン vs ボルドー</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc"></td></tr>
+<tr><td class="date">05:00</td><td class="title">男子69kg級</td><td class="genre">重量挙げ</td><td class="tournament">ウエイトリフティング世界選手権</td><td class="misc"></td></tr>
+<tr><td class="date">10:00</td><td class="title">女子：準決勝</td><td class="genre">バレーボール</td><td class="tournament">Super College</td><td class="misc"></td></tr>
+<tr><td class="date">10:00</td><td class="title">男子：準決勝</td><td class="genre">バレーボール</td><td class="tournament">Super College</td><td class="misc"></td></tr>
 <tr><td class="date">11:30</td><td class="title">リコー vs NTTドコモ</td><td class="genre">ラグビーユニオン</td><td class="tournament">トップリーグ</td><td class="misc">日本語実況・解説あり</td></tr>
 <tr><td class="date">14:00</td><td class="title">川崎F vs 大宮</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc">日本語実況・解説あり</td></tr>
 <tr><td class="date">14:00</td><td class="title">柏 vs 広島</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td class="misc">解説：秋田豊 実況：桑原学 リポーター：三須亜希子</td></tr>
@@ -338,15 +347,24 @@
 <tr><td class="date">14:00</td><td class="title">NTTコム vs 神戸製鋼</td><td class="genre">ラグビーユニオン</td><td class="tournament">トップリーグ</td><td class="misc">日本語実況・解説あり</td></tr>
 <tr><td class="date">15:00</td><td class="title">堺会場</td><td class="genre">バレーボール</td><td class="tournament">V・チャレンジリーグI女子</td><td class="misc">日本語実況あり</td></tr>
 <tr><td class="date">21:00</td><td class="title">バルセロナ vs セルタ</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc">日本語実況・解説あり</td></tr>
+<tr><td class="date">21:00</td><td class="title">キール vs デュッセルドルフ</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ2部</td><td class="misc">日本語実況あり</td></tr>
+<tr><td class="date">21:00</td><td class="title">男子77キロ級：セッション2</td><td class="genre">重量挙げ</td><td class="tournament">ウエイトリフティング世界選手権</td><td class="misc"></td></tr>
+<tr><td class="date">21:30</td><td class="title">チェルシー vs ニューカッスル</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc">日本語解説・実況あり</td></tr>
 <tr><td class="date">23:00</td><td class="title">エクスター vs バース</td><td class="genre">ラグビーユニオン</td><td class="tournament">プレミアシップ</td><td class="misc"></td></tr>
 <tr><td class="date">23:30</td><td class="title">マインツ vs アウクスブルク</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
 <tr><td class="date">23:30</td><td class="title">レヴァークーゼン vs ドルトムント</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc">日本語実況・解説あり</td></tr>
 <tr><td class="date">23:30</td><td class="title">ブレーメン vs シュトゥットガルト</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
+<tr><td class="date">23:30</td><td class="title">ホッフェンハイム vs ライプツィヒ</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc">日本語解説・実況あり</td></tr>
+<tr><td class="date">23:30</td><td class="title">バイエルン vs ハノーファー</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc">日本語解説・実況あり</td></tr>
 <tr><td class="date">23:30</td><td class="title">ウェールズ vs 南アフリカ</td><td class="genre">ラグビーユニオン</td><td class="tournament">インターナショナルズ</td><td class="misc"></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>12月3日（日曜日）</b></td></tr>
+<tr><td class="date">00:00</td><td class="title">レスター vs バーンリー</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc">日本語解説・実況あり</td></tr>
+<tr><td class="date">00:00</td><td class="title">ブライトン vs リヴァプール</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc">日本語解説・実況あり</td></tr>
 <tr><td class="date">00:15</td><td class="title">アトレティコ vs ソシエダ</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc">日本語実況あり</td></tr>
 <tr><td class="date">00:30</td><td class="title">女子69キロ級</td><td class="genre">重量挙げ</td><td class="tournament">ウエイトリフティング世界選手権</td><td class="misc"></td></tr>
 <tr><td class="date">01:00</td><td class="title">ストラスブール vs PSG</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc">日本語実況・解説あり</td></tr>
+<tr><td class="date">01:30</td><td class="title">ワスプス vs レスター</td><td class="genre">ラグビーユニオン</td><td class="tournament">プレミアシップ</td><td class="misc"></td></tr>
+<tr><td class="date">01:45</td><td class="title">ブラジル vs 日本</td><td class="genre">ハンドボール</td><td class="tournament">World Championship (W)</td><td class="misc"></td></tr>
 <tr><td class="date">02:30</td><td class="title">シャルケ vs ケルン</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc">日本語実況あり</td></tr>
 <tr><td class="date">02:30</td><td class="title">アーセナル vs マンチェスター・U</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc">日本語実況・解説あり</td></tr>
 <tr><td class="date">03:00</td><td class="title">女子75キロ級：セッション1</td><td class="genre">重量挙げ</td><td class="tournament">ウエイトリフティング世界選手権</td><td class="misc"></td></tr>
@@ -355,6 +373,7 @@
 <tr><td class="date">04:00</td><td class="title">レンヌ vs アミアン</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc"></td></tr>
 <tr><td class="date">04:00</td><td class="title">ニース vs メス</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc"></td></tr>
 <tr><td class="date">04:00</td><td class="title">モナコ vs アンジェ</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc"></td></tr>
+<tr><td class="date">04:00</td><td class="title">コルトレイク vs ワースランド・ベフェレン</td><td class="genre">サッカー</td><td class="tournament">ベルギー・プロリーグ</td><td class="misc">日本語実況あり</td></tr>
 <tr><td class="date">04:45</td><td class="title">トリノ vs アタランタ</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
 <tr><td class="date">04:45</td><td class="title">ビルバオ vs レアル・マドリード</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc">日本語実況・解説あり</td></tr>
 <tr><td class="date">05:15</td><td class="title">シンガポールマラソン</td><td class="genre">陸上</td><td class="tournament">IAAF マラソン</td><td class="misc"></td></tr>
@@ -379,14 +398,17 @@
 <tr><td class="date">23:00</td><td class="title">サンテティエンヌ vs ナント</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc"></td></tr>
 <tr><td class="date">23:30</td><td class="title">ヘルタ vs フランクフルト</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc">日本語実況あり</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>12月4日（月曜日）</b></td></tr>
+<tr><td class="date">00:00</td><td class="title">ハリクインズ vs サラセンズ</td><td class="genre">ラグビーユニオン</td><td class="tournament">プレミアシップ</td><td class="misc"></td></tr>
 <tr><td class="date">00:15</td><td class="title">ヘタフェ vs バレンシア</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc"></td></tr>
 <tr><td class="date">01:00</td><td class="title">カーン vs リヨン</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc"></td></tr>
 <tr><td class="date">01:00</td><td class="title">マンチェスター・C vs ウェストハム</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc">日本語実況・解説あり</td></tr>
+<tr><td class="date">02:00</td><td class="title">ヴォルフスブルク vs ボルシアMG</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
+<tr><td class="date">02:30</td><td class="title">エイバル vs エスパニョール</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc">日本語実況あり</td></tr>
 <tr><td class="date">03:00</td><td class="title">レッドゾーン：第13週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
 <tr><td class="date">03:00</td><td class="title">バイキングス vs ファルコンズ：第13週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
 <tr><td class="date">03:00</td><td class="title">テキサンズ AT タイタンズ：第13週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
 <tr><td class="date">04:00</td><td class="title">ズルテ・ワレヘム vs ヘント</td><td class="genre">サッカー</td><td class="tournament">ベルギー・プロリーグ</td><td class="misc">日本語実況あり</td></tr>
-<tr><td class="date">04:15</td><td class="title">日本 vs デンマーク</td><td class="genre">ハンドボール</td><td class="tournament">World Championship (W)</td><td class="misc"></td></tr>
+<tr><td class="date">04:30</td><td class="title">日本 vs デンマーク</td><td class="genre">ハンドボール</td><td class="tournament">World Championship (W)</td><td class="misc"></td></tr>
 <tr><td class="date">04:45</td><td class="title">サンプドリア vs ラツィオ</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
 <tr><td class="date">05:00</td><td class="title">モンペリエ vs マルセイユ</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc">日本語実況あり</td></tr>
 <tr><td class="date">06:25</td><td class="title">ラムズ at カージナルス：第13週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
