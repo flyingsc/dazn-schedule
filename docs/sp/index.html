@@ -19,17 +19,18 @@
 <script src="../js/search_schedule.js"></script>
 </head>
 <body>
-<div style="margin-bottom: 1em">更新: 2017年12月11日 19:43 <a href="../changelog.html">更新履歴</a></div>
+<div style="margin-bottom: 1em">更新: 2017年12月12日 08:15 <a href="../changelog.html">更新履歴</a></div>
 ジャンルで検索：<select id="genre" style="margin-bottom: 1em;"><option value="全て">全て</option>
 <option value="WWE">WWE</option>
 <option value="アメフト">アメフト</option>
 <option value="サッカー">サッカー</option>
 <option value="ダーツ">ダーツ</option>
 <option value="ハンドボール">ハンドボール</option>
+<option value="バレーボール">バレーボール</option>
 <option value="ボクシング">ボクシング</option>
 <option value="ラグビーユニオン">ラグビーユニオン</option>
+<option value="競馬">競馬</option>
 <option value="総合格闘技">総合格闘技</option>
-<option value="野球">野球</option>
 <option value="馬場馬術">馬場馬術</option>
 <option value="馬術">馬術</option>
 <option value="馬車競技">馬車競技</option>
@@ -37,13 +38,12 @@
 リーグで検索:<select id="tournament" style="margin-bottom: 0.5em;"><option value="全て">全て</option>
 <option value="DFBポカール" class="サッカー">DFBポカール</option>
 <option value="EFC" class="総合格闘技">EFC</option>
-<option value="FEIワールドカップ" class="馬術">FEIワールドカップ</option>
+<option value="FEIワールドカップ" class="馬車競技">FEIワールドカップ</option>
 <option value="FEIワールドカップ馬場馬術" class="馬場馬術">FEIワールドカップ馬場馬術</option>
 <option value="NFL" class="アメフト">NFL</option>
 <option value="UFC" class="総合格闘技">UFC</option>
 <option value="WCB" class="ボクシング">WCB</option>
 <option value="WWE" class="WWE">WWE</option>
-<option value="アジア・ウィンター・リーグ" class="野球">アジア・ウィンター・リーグ</option>
 <option value="コッパ・イタリア" class="サッカー">コッパ・イタリア</option>
 <option value="コパ・スダメリカーナ" class="サッカー">コパ・スダメリカーナ</option>
 <option value="セリエA" class="サッカー">セリエA</option>
@@ -54,30 +54,12 @@
 <option value="ベルギー・プロリーグ" class="サッカー">ベルギー・プロリーグ</option>
 <option value="ラ・リーガ" class="サッカー">ラ・リーガ</option>
 <option value="リーグアン" class="サッカー">リーグアン</option>
-<option value="ワールドラグビーセブンズ" class="ラグビーユニオン">ワールドラグビーセブンズ</option>
+<option value="レーシングUK" class="競馬">レーシングUK</option>
 <option value="ワールド・ダーツ・チャンピオンシップ" class="ダーツ">ワールド・ダーツ・チャンピオンシップ</option>
 <option value="世界女子ハンドボール選手権" class="ハンドボール">世界女子ハンドボール選手権</option>
+<option value="天皇杯・皇后杯" class="バレーボール">天皇杯・皇后杯</option>
 <option value="欧州ラグビー・チャンピオンズカップ" class="ラグビーユニオン">欧州ラグビー・チャンピオンズカップ</option>
 </select><br/><table>
-<tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>12月11日（月曜日）</b></td></tr>
-<tr><td class="date">00:15</td><td class="title">ベティス vs アトレティコ・マドリード</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc"></td></tr>
-<tr><td class="date">00:15</td><td class="title">サラセンズ vs クレルモン</td><td class="genre">ラグビーユニオン</td><td class="tournament">欧州ラグビー・チャンピオンズカップ</td><td class="misc">解説：片倉史隆 実況：木下貴道</td></tr>
-<tr><td class="date">00:35</td><td class="title">第2日：セッション3</td><td class="genre">ラグビーユニオン</td><td class="tournament">ワールドラグビーセブンズ</td><td class="misc">解説：内山将文 実況：林正浩</td></tr>
-<tr><td class="date">01:00</td><td class="title">ナント vs ニース</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc"></td></tr>
-<tr><td class="date">01:00</td><td class="title">ア・コルーニャ：障害馬術</td><td class="genre">馬術</td><td class="tournament">FEIワールドカップ</td><td class="misc"></td></tr>
-<tr><td class="date">01:30</td><td class="title">マンチェスター・U vs マンチェスター・C</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc">ゲスト解説：鄭大世 解説：水沼貴史 実況：桑原学</td></tr>
-<tr><td class="date">02:00</td><td class="title">サッスオーロ vs クロトーネ</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
-<tr><td class="date">02:00</td><td class="title">アウクスブルク vs ヘルタ</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
-<tr><td class="date">02:30</td><td class="title">エクセター vs レンスター</td><td class="genre">ラグビーユニオン</td><td class="tournament">欧州ラグビー・チャンピオンズカップ</td><td class="misc"></td></tr>
-<tr><td class="date">03:00</td><td class="title">レッドゾーン：第14週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
-<tr><td class="date">03:00</td><td class="title">カウボーイズ at ジャイアンツ：第14週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
-<tr><td class="date">04:45</td><td class="title">ビジャレアル vs バルセロナ</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td class="misc">解説：岩本輝雄 実況：原大悟</td></tr>
-<tr><td class="date">05:00</td><td class="title">マルセイユ vs サンテティエンヌ</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc">実況：西達彦</td></tr>
-<tr><td class="date">06:25</td><td class="title">イーグルス at ラムズ：第14週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
-<tr><td class="date">06:25</td><td class="title">シーホークス at ジャガーズ：第14週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
-<tr><td class="date">09:00</td><td class="title">ユヴェントス vs インテル</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc">解説：清水範久 実況：北川義隆</td></tr>
-<tr><td class="date">10:30</td><td class="title">レイブンズ at スティーラーズ：第14週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc">解説：古庄直樹 実況：上野智広</td></tr>
-<tr><td class="date">19:05</td><td class="title">社会人選抜 vs NPBウエスタン</td><td class="genre">野球</td><td class="tournament">アジア・ウィンター・リーグ</td><td class="misc">実況：木下貴道</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>12月12日（火曜日）</b></td></tr>
 <tr><td class="date">02:30</td><td class="title">サラセンズ vs クレルモン</td><td class="genre">ラグビーユニオン</td><td class="tournament">欧州ラグビー・チャンピオンズカップ</td><td class="misc"></td></tr>
 <tr><td class="date">04:30</td><td class="title">デュッセルドルフ vs ニュルンベルク</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ2部</td><td class="misc">実況：波多江良一</td></tr>
@@ -152,6 +134,8 @@
 <tr><td class="date">06:30</td><td class="title">ベアーズ at ライオンズ：第15週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc">日本語実況・解説あり</td></tr>
 <tr><td class="date">10:00</td><td class="title">ファイトナイト：ローラー vs ドス・アンジョス</td><td class="genre">総合格闘技</td><td class="tournament">UFC</td><td class="misc">解説：宇野薫 実況：西達彦 同時通訳：小池瑞香</td></tr>
 <tr><td class="date">10:25</td><td class="title">チャージャーズ at チーフス：第15週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc">日本語実況・解説あり</td></tr>
+<tr><td class="date">11:00</td><td class="title">女子準々決勝</td><td class="genre">バレーボール</td><td class="tournament">天皇杯・皇后杯</td><td class="misc">日本語実況・解説あり</td></tr>
+<tr><td class="date">11:00</td><td class="title">男子準々決勝</td><td class="genre">バレーボール</td><td class="tournament">天皇杯・皇后杯</td><td class="misc">日本語実況・解説あり</td></tr>
 <tr><td class="date">11:30</td><td class="title">東芝 vs 近鉄</td><td class="genre">ラグビーユニオン</td><td class="tournament">トップリーグ</td><td class="misc">解説：藤島大 実況：佐藤哲也</td></tr>
 <tr><td class="date">11:30</td><td class="title">コカ・コーラ vs クボタ</td><td class="genre">ラグビーユニオン</td><td class="tournament">トップリーグ</td><td class="misc">解説：野澤武史 実況：土居壮</td></tr>
 <tr><td class="date">11:45</td><td class="title">ビリー・ジョー・サンダース vs デビッド・レミュー</td><td class="genre">ボクシング</td><td class="tournament">WCB</td><td class="misc">解説：原功 日本語実況あり</td></tr>
@@ -247,4 +231,10 @@
 <tr><td class="date">03:00</td><td class="title">ファルコンズ at セインツ：第16週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
 <tr><td class="date">03:00</td><td class="title">ラムズ at タイタンズ：第16週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
 <tr><td class="date">06:25</td><td class="title">シーホークス at カウボーイズ：第16週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc"></td></tr>
+<tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>12月26日（火曜日）</b></td></tr>
+<tr><td class="date">06:30</td><td class="title">スティーラーズ at テキサンズ：第16週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc">解説：井上友綱 実況：上野智広</td></tr>
+<tr><td class="date">10:00</td><td class="title">RAW #1283</td><td class="genre">WWE</td><td class="tournament">WWE</td><td class="misc">日本語実況・解説あり</td></tr>
+<tr><td class="date">10:30</td><td class="title">レイダース at イーグルス：第16週</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td class="misc">解説：大出洋之 実況：有馬隼人</td></tr>
+<tr><td class="date">21:30</td><td class="title">トッテナム vs サンサンプトン</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td class="misc">日本語実況・解説あり</td></tr>
+<tr><td class="date">21:30</td><td class="title">キングジョージ6世チェイス</td><td class="genre">競馬</td><td class="tournament">レーシングUK</td><td class="misc"></td></tr>
 </table></body></html>
