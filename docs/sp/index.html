@@ -19,11 +19,12 @@
 <script src="../js/search_schedule.js"></script>
 </head>
 <body>
-<div style="margin-bottom: 1em">更新: 2018年02月02日 19:09 <a href="../changelog.html">更新履歴</a></div>
+<div style="margin-bottom: 1em">更新: 2018年02月03日 08:04 <a href="../changelog.html">更新履歴</a></div>
 ジャンルで検索：<select id="genre" style="margin-bottom: 1em;"><option value="全て">全て</option>
 <option value="WWE">WWE</option>
 <option value="アメフト">アメフト</option>
 <option value="エクストリームスポーツ">エクストリームスポーツ</option>
+<option value="キックボクシング">キックボクシング</option>
 <option value="ゴルフ">ゴルフ</option>
 <option value="サッカー">サッカー</option>
 <option value="スカッシュ">スカッシュ</option>
@@ -54,6 +55,7 @@
 <option value="アルゼンチン・オープン" class="テニス">アルゼンチン・オープン</option>
 <option value="エクアドル・オープン" class="テニス">エクアドル・オープン</option>
 <option value="カタール・トータル・オープン" class="テニス">カタール・トータル・オープン</option>
+<option value="グローリー" class="キックボクシング">グローリー</option>
 <option value="コパデルレイ" class="サッカー">コパデルレイ</option>
 <option value="サンクトペテルブルク・レディース・トロフィー" class="テニス">サンクトペテルブルク・レディース・トロフィー</option>
 <option value="スウェーデンオープン" class="スカッシュ">スウェーデンオープン</option>
@@ -62,11 +64,12 @@
 <option value="デビスカップ" class="テニス">デビスカップ</option>
 <option value="ドバイツアー" class="自転車競技">ドバイツアー</option>
 <option value="ニューバランス屋内グランプリ" class="陸上">ニューバランス屋内グランプリ</option>
+<option value="ニューヨーク・オープン" class="テニス">ニューヨーク・オープン</option>
 <option value="フェドカップ" class="テニス">フェドカップ</option>
 <option value="フランス・カップ" class="サッカー">フランス・カップ</option>
 <option value="ブンデスリーガ" class="サッカー">ブンデスリーガ</option>
 <option value="プレミアシップ" class="ラグビーユニオン">プレミアシップ</option>
-<option value="プレミアリーグ" class="ダーツ">プレミアリーグ</option>
+<option value="プレミアリーグ" class="サッカー">プレミアリーグ</option>
 <option value="ベルギー・プロリーグ" class="サッカー">ベルギー・プロリーグ</option>
 <option value="ボルタ・ア・ラ・コムニタ・バレンシアナ" class="自転車競技">ボルタ・ア・ラ・コムニタ・バレンシアナ</option>
 <option value="マドリード室内陸上" class="陸上">マドリード室内陸上</option>
@@ -80,18 +83,6 @@
 <option value="南フランス・オープン" class="テニス">南フランス・オープン</option>
 <option value="台湾オープン" class="テニス">台湾オープン</option>
 </select><br/><table>
-<tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>2月2日（金曜日）</b></td></tr>
-<tr><td class="date">04:00</td><td class="title">第1週：ダブリン</td><td class="genre">ダーツ</td><td class="tournament">プレミアリーグ</td><td class="misc"></td></tr>
-<tr><td class="date">05:30</td><td class="title">準決勝ファーストレグ：バルセロナ vs バレンシア</td><td class="genre">サッカー</td><td class="tournament">コパデルレイ</td><td class="misc">解説：岩本輝雄 実況：桑原学</td></tr>
-<tr><td class="date">12:00</td><td class="title">日本 vs イタリア：初日</td><td class="genre">テニス</td><td class="tournament">デビスカップ</td><td class="misc"></td></tr>
-<tr><td class="date">14:00</td><td class="title">準々決勝</td><td class="genre">テニス</td><td class="tournament">台湾オープン</td><td class="misc"></td></tr>
-<tr><td class="date">19:00</td><td class="title">スペイン vs イギリス：初日</td><td class="genre">テニス</td><td class="tournament">デビスカップ</td><td class="misc"></td></tr>
-<tr><td class="date">19:00</td><td class="title">1回戦：初日</td><td class="genre">テニス</td><td class="tournament">デビスカップ</td><td class="misc"></td></tr>
-<tr><td class="date">19:00</td><td class="title">準々決勝</td><td class="genre">テニス</td><td class="tournament">サンクトペテルブルク・レディース・トロフィー</td><td class="misc"></td></tr>
-<tr><td class="date">21:00</td><td class="title">アブダビ：予選</td><td class="genre">エクストリームスポーツ</td><td class="tournament">レッドブル・エアレース</td><td class="misc"></td></tr>
-<tr><td class="date">23:00</td><td class="title">セルビア vs アメリカ：初日</td><td class="genre">テニス</td><td class="tournament">デビスカップ</td><td class="misc"></td></tr>
-<tr><td class="date">23:00</td><td class="title">ボルタ・ア・ラ・コムニタ・バレンシアナ：ステージ3</td><td class="genre">自転車競技</td><td class="tournament">ボルタ・ア・ラ・コムニタ・バレンシアナ</td><td class="misc">解説：別府始 実況：松本圭祐</td></tr>
-<tr><td class="date">23:15</td><td class="title">ウェイスト・マネージメント・フェニックス・オープン：第2日</td><td class="genre">ゴルフ</td><td class="tournament">PGAツアー</td><td class="misc"></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>2月3日（土曜日）</b></td></tr>
 <tr><td class="date">02:30</td><td class="title">デュッセルドルフ vs ザントハウゼン</td><td class="genre">サッカー</td><td class="tournament">2.ブンデスリーガ</td><td class="misc">実況：波多江良一</td></tr>
 <tr><td class="date">04:30</td><td class="title">ケルン vs ドルトムント</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc">解説：戸田和幸 実況：野村明弘</td></tr>
@@ -281,4 +272,22 @@
 <tr><td class="date">06:45</td><td class="title">第4日</td><td class="genre">テニス</td><td class="tournament">アルゼンチン・オープン</td><td class="misc"></td></tr>
 <tr><td class="date">21:30</td><td class="title">準々決勝</td><td class="genre">テニス</td><td class="tournament">カタール・トータル・オープン</td><td class="misc"></td></tr>
 <tr><td class="date">23:30</td><td class="title">ジェネシス・オープン：第2日</td><td class="genre">ゴルフ</td><td class="tournament">PGAツアー</td><td class="misc"></td></tr>
+<tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>2月17日（土曜日）</b></td></tr>
+<tr><td class="date">02:00</td><td class="title">準々決勝</td><td class="genre">テニス</td><td class="tournament">アルゼンチン・オープン</td><td class="misc"></td></tr>
+<tr><td class="date">03:00</td><td class="title">準々決勝</td><td class="genre">テニス</td><td class="tournament">ニューヨーク・オープン</td><td class="misc">日本語実況・解説あり</td></tr>
+<tr><td class="date">04:30</td><td class="title">ヘルタ vs マインツ</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc">日本語実況あり</td></tr>
+<tr><td class="date">04:30</td><td class="title">トロイデン vs アンデルレヒト</td><td class="genre">サッカー</td><td class="tournament">ベルギー・プロリーグ</td><td class="misc">日本語実況あり</td></tr>
+<tr><td class="date">04:45</td><td class="title">5回戦：レスター vs シェフィールド・ユナイテッド</td><td class="genre">サッカー</td><td class="tournament">FAカップ</td><td class="misc">日本語実況あり</td></tr>
+<tr><td class="date">04:45</td><td class="title">モナコ vs ディジョン</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td class="misc"></td></tr>
+<tr><td class="date">04:45</td><td class="title">シャークス vs サラセンズ</td><td class="genre">ラグビーユニオン</td><td class="tournament">プレミアシップ</td><td class="misc"></td></tr>
+<tr><td class="date">05:00</td><td class="title">5回戦：チェルシー vs ハル・シティ</td><td class="genre">サッカー</td><td class="tournament">FAカップ</td><td class="misc"></td></tr>
+<tr><td class="date">11:00</td><td class="title">ファイナル6福岡会場</td><td class="genre">バレーボール</td><td class="tournament">V・プレミアリーグ男子</td><td class="misc">日本語実況・解説あり</td></tr>
+<tr><td class="date">11:00</td><td class="title">岡山会場</td><td class="genre">バレーボール</td><td class="tournament">V・チャレンジリーグI女子</td><td class="misc">日本語実況あり</td></tr>
+<tr><td class="date">13:00</td><td class="title">グローリー50</td><td class="genre">キックボクシング</td><td class="tournament">グローリー</td><td class="misc"></td></tr>
+<tr><td class="date">23:00</td><td class="title">ウディネーゼ vs ローマ</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td class="misc"></td></tr>
+<tr><td class="date">23:00</td><td class="title">準決勝</td><td class="genre">テニス</td><td class="tournament">カタール・トータル・オープン</td><td class="misc"></td></tr>
+<tr><td class="date">23:30</td><td class="title">ヴォルフスブルク vs バイエルン</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc">日本語実況・解説あり</td></tr>
+<tr><td class="date">23:30</td><td class="title">ケルン vs ハノーファー</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc">日本語実況あり</td></tr>
+<tr><td class="date">23:30</td><td class="title">ハンブルガーSV vs レヴァークーゼン</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
+<tr><td class="date">23:30</td><td class="title">フライブルク vs ブレーメン</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td class="misc"></td></tr>
 </table></body></html>
