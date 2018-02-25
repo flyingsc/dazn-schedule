@@ -3,6 +3,13 @@ $(document).ready(function(){
 	var genre = $(this).val();
 	var date_show_flag = true;
 	var prev_date = 0;
+
+	if(genre == "全て"){
+	    $("#for_bookmark").text("検索後のページにリンクを貼れるようにしました");
+	} else {
+	    console.log(location.origin);
+	    $("#for_bookmark").html('<a id="for_bookmark" href="' + location.href.replace(location.search, "") + "?genre=" + encodeURI(genre) + '">このページへのリンク</a>');
+	}
 	
 	$("select#tournament").val("全て");
 
@@ -57,6 +64,21 @@ $(document).ready(function(){
 	var count = 0;
 	var date_show_flag = true;
 	var prev_date = 0;
+	var param = [];
+
+	if(genre != "全て"){
+	    param.push("genre=" + encodeURI(genre));
+	}
+
+	if(tournament != "全て"){
+	    param.push("tournament=" + encodeURI(tournament));
+	}
+
+	if(param.length == 0){
+	    $("#for_bookmark").text("検索後のページにリンクを貼れるようにしました");
+	} else {
+	    $("#for_bookmark").html('<a id="for_bookmark" href="' + location.href.replace(location.search, "") + "?" + param.join("&") + '">このページのリンク</a>');
+	}
 	
 	$("tr").each(function(){
 	    var txt = $(this).find("td.tournament").html();
@@ -93,4 +115,24 @@ $(document).ready(function(){
 	    $(prev_date).hide();
 	}
     });
+
+    var params = location.search.substring(1).split("&");
+    for(var i = 0; i < params.length; i++){
+	var a = params[i].split("=");
+
+	if(a.length != 2){
+	    continue;
+	}
+	
+	var key = a[0];
+	var value = decodeURI(a[1]);
+
+	if(key == "genre"){
+	    $("#genre").val(value);
+	    $("#genre").change();
+	} else if(key == "tournament"){
+	    $("#tournament").val(value);
+	    $("#tournament").change();
+	}
+    }
 });
