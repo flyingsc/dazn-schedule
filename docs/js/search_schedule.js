@@ -4,6 +4,14 @@ $(document).ready(function(){
 	var date_show_flag = true;
 	var prev_date = 0;
 
+	if(window.history){
+            if(genre == "全て"){
+                history.replaceState("", "", location.pathname.split("/").pop());
+            } else {
+                history.replaceState("", "", "?genre=" + encodeURI(genre));
+            }
+        }
+	
 	if(genre == "全て"){
 	    $("#for_bookmark").text("検索後のページにリンクを貼れるようにしました");
 	} else {
@@ -74,6 +82,14 @@ $(document).ready(function(){
 	    param.push("tournament=" + encodeURI(tournament));
 	}
 
+	if(window.history){
+            if(param.length == 0){
+                history.replaceState("", "", location.pathname.split("/").pop());
+            } else {
+                history.replaceState("", "", "?" + param.join("&"));
+            }
+        }
+	
 	if(param.length == 0){
 	    $("#for_bookmark").text("検索後のページにリンクを貼れるようにしました");
 	} else {
