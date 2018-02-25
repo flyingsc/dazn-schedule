@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 	if(window.history){
             if(genre == "全て"){
-                history.replaceState("", "", location.pathname.split("/").pop());
+                history.replaceState("", "", "/");
             } else {
                 history.replaceState("", "", "?genre=" + encodeURI(genre));
             }
