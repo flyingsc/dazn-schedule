@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 	if(window.history){
             if(genre == "全て"){
-                history.replaceState("", "", location.pathname.split("/").pop());
+                history.replaceState("", "", location.pathname);
             } else {
                 history.replaceState("", "", "?genre=" + encodeURI(genre));
             }
@@ -84,7 +84,7 @@ $(document).ready(function(){
 
 	if(window.history){
             if(param.length == 0){
-                history.replaceState("", "", location.pathname.split("/").pop());
+                history.replaceState("", "", location.pathname);
             } else {
                 history.replaceState("", "", "?" + param.join("&"));
             }
