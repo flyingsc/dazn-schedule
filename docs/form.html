@@ -4,40 +4,37 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DAZN番組表 - 動作報告</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
- $(document).ready(function(){
-   $('#gform').on('submit', function(e) {
-     $('#gform *').fadeOut(2000);
-     $('#gform').prepend('送信されました。ありがとうございました。');
-   });
-   $("input:first").val(window.navigator.userAgent);
- });
-</script>
 <style type="text/css">
  body {
    background-color: white;
    line-height: 1.5em;
  }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+   document.getElementById("user_agent").value = window.navigator.userAgent;
+ });
+</script>
 </head>
 <body>
-  <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeScKuKlKZt9oPMmlUCKE3AY93R3r-ON-KD90TIsqOxFicYrw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-    <input type="hidden" name="entry.2019926286" id="entry.2019926286">
+  <form name="contact" method="POST" netlify>
     <p>動かなかった部分を選んでください</p>
-    <label><input type="checkbox" name="entry.1909527092" id="entry.1909527092" value="全部">全部</label><br>
-    <label><input type="checkbox" name="entry.1909527092" id="entry.1909527092" value="スマホ向けページ">スマホ向けページ</label><br>
-    <label><input type="checkbox" name="entry.1909527092" id="entry.1909527092" value="ジャンルで検索">ジャンルで検索</label><br>
-    <label><input type="checkbox" name="entry.1909527092" id="entry.1909527092" value="リーグで検索">リーグで検索</label><br>
-    <label><input type="checkbox" name="entry.1909527092" id="entry.1909527092" value="検索後のページへのリンク">検索後のページへのリンク</label><br>
-    <label><input type="checkbox" name="entry.1909527092" id="entry.1909527092" value="お気に入りで検索">お気に入りで検索</label><br>
-    <label><input type="checkbox" name="entry.1909527092" id="entry.1909527092" value="お気に入りの設定">お気に入りの設定</label><br><br>
+    <label><input type="checkbox" name="dontrun">全部</label><br>
+    <label><input type="checkbox" name="dontrun">スマホ向けページ</label><br>
+    <label><input type="checkbox" name="dontrun">ジャンルで検索</label><br>
+    <label><input type="checkbox" name="dontrun">リーグで検索</label><br>
+    <label><input type="checkbox" name="dontrun">検索後のページへのリンク</label><br>
+    <label><input type="checkbox" name="dontrun">お気に入りで検索</label><br>
+    <label><input type="checkbox" name="dontrun">お気に入りの設定</label><br>
+    <br>
     <p>その他要望があればお書きください</p>
-    <textarea name="entry.1676697188" id="entry.1676697188" cols="50" rows="5"></textarea><br>
-    <input type="submit" value="送信">
+    <textarea name="message" cols="40" rows="5"></textarea>
+    <input type="hidden" name="user_agent" id="user_agent">
+    <p>
+      <button type="submit">送信</button>
+    </p>
   </form>
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none" onload="if(submitted) {}"></iframe>
 </body>
 </html>
 
