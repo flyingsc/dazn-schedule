@@ -13,7 +13,7 @@ $(document).ready(function(){
         }
 	
 	if(genre == "全て"){
-	    $("#for_bookmark").text("検索後のページにリンクを貼れるようにしました");
+	    $("#for_bookmark").text("検索後のページにリンクを張れるようにしました");
 	} else {
 	    $("#for_bookmark").html('<a id="for_bookmark" href="' + location.href.replace(location.search, "") + "?genre=" + encodeURI(genre) + '">このページへのリンク</a>');
 	}
