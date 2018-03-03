@@ -21,16 +21,18 @@
   <form name="report" method="POST" netlify>
     <input type="hidden" name="user_agent" id="user_agent">
     <p>動かなかった部分を選んでください</p>
-    <label><input type="checkbox" name="全部">全部</label><br>
-    <label><input type="checkbox" name="スマホ向けページ">スマホ向けページ</label><br>
-    <label><input type="checkbox" name="ジャンルで検索">ジャンルで検索</label><br>
-    <label><input type="checkbox" name="リーグで検索">リーグで検索</label><br>
-    <label><input type="checkbox" name="検索後のページへのリンク">検索後のページへのリンク</label><br>
-    <label><input type="checkbox" name="お気に入りで検索">お気に入りで検索</label><br>
-    <label><input type="checkbox" name="お気に入りの設定">お気に入りの設定</label><br>
+    <label><input type="checkbox" name="機能" value="全部">全部</label><br>
+    <label><input type="checkbox" name="機能" value="スマホ向けページ">スマホ向けページ</label><br>
+    <label><input type="checkbox" name="機能" value="ジャンルで検索">ジャンルで検索</label><br>
+    <label><input type="checkbox" name="機能" value="リーグで検索">リーグで検索</label><br>
+    <label><input type="checkbox" name="機能" value="検索後のページへのリンク">検索後のページへのリンク</label><br>
+    <label><input type="checkbox" name="機能" value="お気に入りで検索">お気に入りで検索</label><br>
+    <label><input type="checkbox" name="機能" value="お気に入りの設定">お気に入りの設定</label><br>
     <br>
-    <p>その他要望があればお書きください</p>
-    <textarea name="message" cols="40" rows="5"></textarea>
+    <p>不具合を具体的にお書きください</p>
+    <textarea name="詳細" cols="40" rows="5"></textarea>
+    <p>その他要望などあればお書きください</p>
+    <textarea name="要望" cols="40" rows="5"></textarea>
     <p>
       <button type="submit">送信</button>
     </p>

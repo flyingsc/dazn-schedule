@@ -14,8 +14,6 @@ function checkTournamentBox(tournament){
     $('input[name="tournament"]').each(function(){
 	if($.inArray($(this).val(), tournament) >= 0){
 	    $(this).prop("checked", true);
-	} else {
-	    $(this).prop("checked", false);
 	}
     });
 }

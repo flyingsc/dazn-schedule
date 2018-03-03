@@ -40,7 +40,7 @@ $(document).ready(function(){
 
     function showLocationAfterSearch(search_query){
 	if(search_query.length == 1){
-	    $("#for_bookmark").text("検索後のページにリンクを貼れるようにしました");
+	    $("#for_bookmark").text("");
 	} else {
 	    $("#for_bookmark").html('<a id="for_bookmark" href="' + location.href.replace(location.search, "") + search_query + '">このページへのリンク</a>');
 	}
