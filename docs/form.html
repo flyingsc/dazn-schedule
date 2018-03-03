@@ -19,6 +19,7 @@
 </head>
 <body>
   <form name="report" method="POST" netlify>
+    <input type="hidden" name="user_agent" id="user_agent">
     <p>動かなかった部分を選んでください</p>
     <label><input type="checkbox" name="全部">全部</label><br>
     <label><input type="checkbox" name="スマホ向けページ">スマホ向けページ</label><br>
@@ -30,7 +31,6 @@
     <br>
     <p>その他要望があればお書きください</p>
     <textarea name="message" cols="40" rows="5"></textarea>
-    <input type="hidden" name="user_agent" id="user_agent">
     <p>
       <button type="submit">送信</button>
     </p>
