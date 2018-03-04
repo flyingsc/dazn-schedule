@@ -2,16 +2,19 @@ $(document).ready(function(){
     function loadUserSetting(){
 	var favorite_genre;
 	var excluded_tournament;
+	var view_setting;
 	
 	try {
 	    favorite_genre = JSON.parse(localStorage.getItem("genre"));
 	    excluded_tournament = JSON.parse(localStorage.getItem("tournament"));
+	    view_setting = JSON.parse(localStorage.getItem("view"));
 	} catch(e) {
 	    favorite_genre = [];
 	    excluded_tournament = [];
+	    view_setting = [];
 	}
 
-	return [favorite_genre, excluded_tournament];
+	return [favorite_genre, excluded_tournament, view_setting];
     }
 
     function createSearchQuery(genre, tournament){
@@ -152,13 +155,36 @@ $(document).ready(function(){
 	    }
 	}
     }
+
+    function hideGenre(){
+	$("th:nth-child(2)").css("display", "none");
+	$("td.genre").css("display", "none");
+    }
+
+    function hideTournament(){
+	$("th:nth-child(3)").css("display", "none");
+	$("td.tournament").css("display", "none");
+    }
+
+    function showGenre(){
+	$("th:nth-child(2)").css("display", "");
+	$("td.genre").css("display", "");
+    }
+    
+    function showTournament(){
+	$("th:nth-child(3)").css("display", "");
+	$("td.tournament").css("display", "");
+    }
     
     var favorite_genre;
     var excluded_tournament;
+    var view_setting;
+    
     var a = loadUserSetting();
     favorite_genre = a[0];
     excluded_tournament = a[1];
-
+    view_setting = a[2];
+    
     $("select#genre").change(function(){
 	var genre = $(this).val();
 	var search_query = createSearchQuery(genre);
@@ -170,6 +196,18 @@ $(document).ready(function(){
 	limitTournamentSelection(genre, favorite_genre, excluded_tournament);
 	
 	showProgram(genre, "全て", favorite_genre, excluded_tournament);
+
+	if($.inArray("hide_row", view_setting) >= 0){
+	    if(genre == "全て"){
+		showGenre();
+		if($("select#tournament").val() == "全て"){
+		    showTournament();
+		}
+	    } else {
+		hideGenre();
+	    }
+	}
+	    
     });
 
     $("select#tournament").change(function(){
@@ -184,6 +222,14 @@ $(document).ready(function(){
 	showLocationAfterSearch(search_query);
 	
 	showProgram(genre, tournament, favorite_genre, excluded_tournament);
+
+	if($.inArray("below_commentator", view_setting) >= 0){
+	    if(tournament == "全て"){
+		showTournament();
+	    } else {
+		hideTournament();
+	    }
+	}
     });
 
     applySearchQuery();

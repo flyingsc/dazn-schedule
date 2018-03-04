@@ -1,12 +1,12 @@
 function showGenre(genre){
     $.each(genre, function(index, g){
-	$("fieldset:first").append('<label class="genre"><input type="checkbox" name="genre" value="' + g + '">' + g + "</label>");
+	$("fieldset#genre").append('<label class="genre"><input type="checkbox" name="genre" value="' + g + '">' + g + "</label>");
     });
 }
 
 function showTournament(tournament){
     $.each(tournament, function(index, t){
-	$("fieldset:last").append('<label class="tournament"><input type="checkbox" name="tournament" value="' + t + '">' + t + "</label>");
+	$("fieldset#tournament").append('<label class="tournament"><input type="checkbox" name="tournament" value="' + t + '">' + t + "</label>");
     });
 }
 
@@ -18,18 +18,30 @@ function checkTournamentBox(tournament){
     });
 }
 
+function checkViewSettingBox(view_settng){
+    $('input[name="view"]').each(function(){
+	if($.inArray($(this).val(), view_setting) >= 0){
+	    $(this).prop("checked", true);
+	}
+    });
+}
+
 $(function(){
     $.getJSON("./js/genre_tournament.json", null, function(data, status){
 	var genre_tournament = data;
 	var saved_genre = [];
 	var saved_tournament = [];
-
+	var saved_view_setting = [];
+	
 	try {
 	    saved_genre = JSON.parse(localStorage.getItem("genre"));
 	    saved_tournament = JSON.parse(localStorage.getItem("tournament"));
+	    saved_view_setting = JSON.parse(localStorage.getItem("view"));
 	} catch(e) {
 	}
 
+	checkViewSettingBox(saved_view_setting);
+	
 	showGenre(Object.keys(genre_tournament));
 	
 	$('input[name="genre"]').each(function(){
@@ -72,12 +84,21 @@ $(function(){
 		}
 	    });
 
+	    var view_setting = [];
+	    $('input[name="view"]').each(function(){
+		if($(this).prop("checked")){
+		    view_setting.push($(this).val());
+		}
+	    });
+	    
 	    try {
 		localStorage.setItem("genre", JSON.stringify(favorite_genre));
 		localStorage.setItem("tournament", JSON.stringify(favorite_tournament));
-
+		localStorage.setItem("view", JSON.stringify(view_setting));
+		
 		saved_genre = favorite_genre;
 		saved_tournament = favorite_tournament;
+		saved_view_setting = view_setting;
 		alert("設定を保存しました");
 	    } catch(e) {
 		alert("設定を保存できませんでした(プライベートモードになっていませんか？)");
