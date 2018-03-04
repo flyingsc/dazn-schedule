@@ -18,7 +18,7 @@ function checkTournamentBox(tournament){
     });
 }
 
-function checkViewSettingBox(view_settng){
+function checkViewSettingBox(view_setting){
     $('input[name="view"]').each(function(){
 	if($.inArray($(this).val(), view_setting) >= 0){
 	    $(this).prop("checked", true);
