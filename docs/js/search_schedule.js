@@ -175,6 +175,23 @@ $(document).ready(function(){
 	$("th:nth-child(3)").css("display", "");
 	$("td.tournament").css("display", "");
     }
+
+    function shortenCommentator(){
+	$("th:nth-child(5)").text("実");
+
+	var re = /日本語/;
+	$("td:nth-child(5)").each(function(){
+	    if(re.test($(this).text())){
+		$(this).html('<div style="display:none;">' + $(this).text() + "</div>△");
+	    } else if($(this).text() != ""){
+		$(this).html('<div style="display:none;">' + $(this).text() + "</div>○");
+	    }
+	});
+	
+	$("td:nth-child(5)").click(function(){
+	    $("div#footer").text($(this).find("div").text());
+	});
+    }
     
     var favorite_genre;
     var excluded_tournament;
@@ -184,6 +201,10 @@ $(document).ready(function(){
     favorite_genre = a[0];
     excluded_tournament = a[1];
     view_setting = a[2];
+
+    if($.inArray("below_commentator", view_setting) >= 0){
+	shortenCommentator();
+    }
     
     $("select#genre").change(function(){
 	var genre = $(this).val();
@@ -200,14 +221,12 @@ $(document).ready(function(){
 	if($.inArray("hide_row", view_setting) >= 0){
 	    if(genre == "全て"){
 		showGenre();
-		if($("select#tournament").val() == "全て"){
-		    showTournament();
-		}
 	    } else {
 		hideGenre();
 	    }
+
+	    showTournament();
 	}
-	    
     });
 
     $("select#tournament").change(function(){
@@ -225,8 +244,12 @@ $(document).ready(function(){
 
 	if($.inArray("below_commentator", view_setting) >= 0){
 	    if(tournament == "全て"){
+		if(genre == "全て"){
+		    showGenre();
+		}
 		showTournament();
 	    } else {
+		hideGenre();
 		hideTournament();
 	    }
 	}
