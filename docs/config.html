@@ -14,7 +14,7 @@
 label {
   display: inline-block;
   width: 20em;
-  line-height: 1.8;
+  line-height: 1.8em;
 }
 
 button {
@@ -24,12 +24,19 @@ button {
 </head>
 <body>
   <form>
-    <p>お気に入りのスポーツを選択してください</p>
+    <p>番組表を表示する際の設定を選択してください</p>
     <fieldset>
+      <legend>表示設定</legend>
+      <label><input type="checkbox" name="view" value="hide_row">検索後、ジャンルやリーグを表示しない</label>
+      <label><input type="checkbox" name="view" value="below_commentator">実況・解説を下部表示する(※1)</label>
+    </fieldset>
+    <p>※1:日本語実況・解説がある場合は△、実況・解説が確定している場合は○を表示。○をクリックすると実況・解説が画面下部に表示されます。</p>
+    <p>お気に入りのスポーツを選択してください</p>
+    <fieldset id="genre">
       <legend>お気に入りのスポーツ</legend>
     </fieldset>
     <p>お気に入りのスポーツの中で除外したいリーグ、大会がある場合は選択してください</p>
-    <fieldset>
+    <fieldset id="tournament">
       <legend>除外したいリーグ・大会</legend>
     </fieldset>
     <button type="button">保存する</button>
