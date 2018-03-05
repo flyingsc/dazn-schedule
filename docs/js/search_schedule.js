@@ -14,6 +14,10 @@ $(document).ready(function(){
 	    view_setting = [];
 	}
 
+	if(/\/sp\//.test(location.pathname)){
+	    return [favorite_genre, excluded_tournament, []];
+	}
+	
 	return [favorite_genre, excluded_tournament, view_setting];
     }
 
@@ -189,10 +193,14 @@ $(document).ready(function(){
 	});
 	
 	$("td:nth-child(5)").click(function(){
+	    if($("div#footer").css("display") == "none"){
+		$("div#footer").css("display", "");
+	    }
+	    
 	    $("div#footer").text($(this).find("div").text());
 	});
     }
-    
+
     var favorite_genre;
     var excluded_tournament;
     var view_setting;
@@ -204,8 +212,13 @@ $(document).ready(function(){
 
     if($.inArray("below_commentator", view_setting) >= 0){
 	shortenCommentator();
+	
+	$("div#footer").css("display", "");
+	$("div#footer").click(function(){
+	    $(this).css("display", "none");
+	});
     }
-    
+
     $("select#genre").change(function(){
 	var genre = $(this).val();
 	var search_query = createSearchQuery(genre);
