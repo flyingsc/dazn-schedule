@@ -14,10 +14,6 @@ $(document).ready(function(){
 	    view_setting = [];
 	}
 
-	if(/\/sp\//.test(location.pathname)){
-	    return [favorite_genre, excluded_tournament, []];
-	}
-	
 	return [favorite_genre, excluded_tournament, view_setting];
     }
 
@@ -217,8 +213,12 @@ $(document).ready(function(){
 	$("div#footer").click(function(){
 	    $(this).css("display", "none");
 	});
-    }
 
+	if(/\/sp\//.test(location.pathname)){
+	    $("td.misc").removeClass("misc");
+	}
+    }
+    
     $("select#genre").change(function(){
 	var genre = $(this).val();
 	var search_query = createSearchQuery(genre);
