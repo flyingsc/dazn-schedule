@@ -100,7 +100,7 @@ $(function(){
 		saved_tournament = favorite_tournament;
 		saved_view_setting = view_setting;
 		alert("設定を保存しました");
-		location.href = "./";
+		history.back();
 	    } catch(e) {
 		alert("設定を保存できませんでした(プライベートモードになっていませんか？)");
 	    }
