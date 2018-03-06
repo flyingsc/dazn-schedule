@@ -4,11 +4,24 @@ body {
 }
 
 table {
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
+    border-collapse: separate;
+    border-spacing: 0;
+    empty-cells: show;
+    border-top: 1px solid #bbbbbb;
+    border-right: none;
+    border-bottom: none;
+    border-left: 1px solid #bbbbbb;
 }
 
 td, th {
-    border: 1px solid #bbbbbb;
+    /* border: 1px solid #bbbbbb;
+    text-align: left;
+    padding: 8px; */
+    border-top: none;
+    border-right: 1px solid #bbbbbb;
+    border-bottom: 1px solid #bbbbbb;
+    border-left:none;
     text-align: left;
     padding: 8px;
 }
@@ -20,4 +33,31 @@ tr:nth-child(even){
 tr.date-row{
     background-color: #707070;
     color: #eeeeee;
+}
+
+#menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    line-height: 2em;
+}
+#menu li{
+    float: left;
+}
+#menu li a{
+    display: block;
+    text-align: center;
+    margin: 0 20px 0 0;
+}
+div#footer{
+    background-color: #cccccc;
+    color: #171717;
+    z-index: 99;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 0px;
+    border: solid 1px black;
 }
