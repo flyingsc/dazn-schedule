@@ -32,6 +32,9 @@
       $.each(h, function(k, v){
 	data += k + "=" + v + "&";
       });
+
+      console.log($(this).attr("action"));
+      console.log($(this).serialize());
       
       $.post($(this).attr("action"), $(this).serialize()).done(function(){
 	alert("OK");
