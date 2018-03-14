@@ -19,7 +19,7 @@
      e.preventDefault();
 
      var $form = $(this);
-     $.post($form.attr("action"), $(form).serialize()).then(function(){
+     $.post($form.attr("action"), $form.serialize()).then(function(){
        alert("ご協力ありがとうございました");
        history.back();
      });
