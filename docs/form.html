@@ -32,10 +32,8 @@
       $.each(h, function(k, v){
 	data += k + "=" + v + "&";
       });
-
-      data += "form-name=report";
       
-      $.post($(this).attr("action"), data).done(function(){
+      $.post($(this).attr("action"), $(this).serialize()).done(function(){
 	alert("OK");
       });
     });
