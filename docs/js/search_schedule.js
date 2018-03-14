@@ -201,11 +201,19 @@ $(document).ready(function(){
 	var d = new Date();
 	var hour = d.getHours();
 	var date = d.getMonth() + 1 + "月" + d.getDate() + "日";
+	var date_position = $('td:contains("' + date + '")').offset().top;
 	
-	$("td.date").each(function(){
-	    if(parseInt($(this).text(), 10) >= hour && $(this).offset().top >= $('td:contains("' + date + '")').offset().top){
-		window.scroll(0, $(this).offset().top - 100);
-		return false
+	$("td.date:visible").each(function(){
+	    if($(this).offset().top >= date_position){
+		if($(this).parent().nextAll(":visible").eq(0).attr("class") == "date-row"){
+		    window.scroll(0, $(this).offset().top - 100);
+		    return false
+		}
+		
+		if(parseInt($(this).text(), 10) >= hour){
+		    window.scroll(0, $(this).offset().top - 100);
+		    return false
+		}
 	    }
 	});
     }
