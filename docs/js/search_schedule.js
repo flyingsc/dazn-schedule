@@ -280,7 +280,7 @@ $(document).ready(function(){
 	
 	showProgram(genre, tournament, favorite_genre, excluded_tournament);
 
-	if($.inArray("below_commentator", view_setting) >= 0){
+	if($.inArray("hide_row", view_setting) >= 0){
 	    if(tournament == "全て"){
 		if(genre == "全て"){
 		    showGenre();
