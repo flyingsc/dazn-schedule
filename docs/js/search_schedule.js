@@ -179,6 +179,8 @@ $(document).ready(function(){
     function shortenCommentator(){
 	$("th:nth-child(5)").text("実");
 
+	$("td:nth-child(5)").css("padding", "15px 0");
+	
 	var re = /日本語/;
 	$("td:nth-child(5)").each(function(){
 	    if(re.test($(this).text())){
