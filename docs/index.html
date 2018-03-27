@@ -4,7 +4,6 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DAZN番組表</title>
-<link rel="stylesheet" href="./css/pc.css">
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -16,6 +15,12 @@
 
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="./css/pc.css">
 <script src="./js/search_schedule.js"></script>
 </head>
 <body>
@@ -29,7 +34,7 @@
 </ul>
 </div>
 <div id="footer" style="display:none;"></div>
-<div style="margin: 1em 0;">更新: 2018年03月27日 08:07</div>
+<div style="margin: 1em 0;">更新: 2018年03月27日 19:10</div>
 <p>個人設定を追加しました
 <ul style="padding: 0 1.5em;">
 <li>お気に入りのスポーツを設定することでジャンルからお気に入り検索できるように</li>
@@ -84,14 +89,13 @@
 </select><br/><table>
 <tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>3月27日（火曜日）</b></td></tr>
-<tr><td class="date">00:00</td><td class="genre">テニス</td><td class="tournament">マイアミ・オープン</td><td>第7日</td><td></td></tr>
 <tr><td class="date">02:10</td><td class="genre">テニス</td><td class="tournament">マイアミ・オープン</td><td>第7日：ムグルサ vs スティーブンス</td><td></td></tr>
 <tr><td class="date">09:00</td><td class="genre">WWE</td><td class="tournament">WWE</td><td>RAW #1296</td><td>解説：斎藤文彦 実況：市川勝也</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1" style="text-align: center;"><b>3月28日（水曜日）</b></td></tr>
 <tr><td class="date">00:50</td><td class="genre">サッカー</td><td class="tournament">フレンドリーマッチ</td><td>ロシア vs フランス</td><td>解説：渡邉一平 実況：野村明弘</td></tr>
-<tr><td class="date">02:00</td><td class="genre">テニス</td><td class="tournament">マイアミ・オープン</td><td>第8日：セッション1</td><td></td></tr>
+<tr><td class="date">02:00</td><td class="genre">テニス</td><td class="tournament">マイアミ・オープン</td><td>準々決勝：スティーブンス vs ケルバー</td><td></td></tr>
 <tr><td class="date">03:45</td><td class="genre">サッカー</td><td class="tournament">フレンドリーマッチ</td><td>ベルギー vs サウジアラビア</td><td>解説：都並敏史 実況：永田実</td></tr>
-<tr><td class="date">08:30</td><td class="genre">テニス</td><td class="tournament">マイアミ・オープン</td><td>第8日：セッション2</td><td></td></tr>
+<tr><td class="date">08:30</td><td class="genre">テニス</td><td class="tournament">マイアミ・オープン</td><td>準々決勝：アザレンカ vs Ka・プリスコバ</td><td></td></tr>
 <tr><td class="date">09:00</td><td class="genre">WWE</td><td class="tournament">WWE</td><td>SMACKDOWN #971</td><td>解説：斎藤文彦 実況：高橋大輔</td></tr>
 <tr><td class="date">19:05</td><td class="genre">バスケットボール</td><td class="tournament">B1</td><td>京都 vs 西宮</td><td>解説：山崎昭史 実況：中尾晃久</td></tr>
 <tr><td class="date">19:05</td><td class="genre">バスケットボール</td><td class="tournament">B1</td><td>北海道 vs SR渋谷</td><td>解説：町田洋介 実況：中村剛大</td></tr>
@@ -173,7 +177,7 @@
 <tr><td class="date">22:30</td><td class="genre">サッカー</td><td class="tournament">ブンデスリーガ</td><td>シュトゥットガルト vs ハンブルガーSV</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">22:30</td><td class="genre">自転車競技</td><td class="tournament">UCIヨーロッパツアー</td><td>グラン・プレミオ＝ミゲル・インドゥライン</td><td></td></tr>
 <tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>マンチェスター・U vs スウォンジー</td><td>日本語実況・解説あり</td></tr>
-<tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>ブライトン vs レスター</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>ブライトン vs レスター</td><td>解説：黒崎久志 実況：若月弘一郎</td></tr>
 <tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>ニューカッスル vs ハダースフィールド</td><td></td></tr>
 <tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>ワトフォード vs ボーンマス</td><td></td></tr>
 <tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>ウェストハム vs サウサンプトン</td><td></td></tr>
