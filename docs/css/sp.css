@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    margin: 0;
 }
 
 table {
@@ -54,16 +55,23 @@ tr.date-row{
     padding: 0;
     list-style: none;
     overflow: hidden;
-    line-height: 2em;
+    width: 100%;
+    background-color: #f2f2f5;
 }
 #menu li{
     float: left;
+    width: -webkit-calc(100% / 5);
+    width: calc(100% / 5);
 }
 #menu li a{
     display: block;
     text-align: center;
-    margin: 0 20px 0 0;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    line-height: 45px;
 }
+
 div#footer{
     background-color: #cccccc;
     color: #171717;
@@ -75,4 +83,18 @@ div#footer{
     padding: 5px 0px;
     border: solid 1px black;
     font-size: 0.85em;
+}
+
+div.update_time {
+    margin: 1em 0;
+}
+select#genre {
+    margin-bottom: 1em;
+}
+select#tournament {
+    margin-bottom: 0.5em;
+    max-width: calc(100% - 7rem);
+}
+tr.date-row>td {
+    text-align: center;
 }
