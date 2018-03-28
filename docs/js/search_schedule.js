@@ -181,6 +181,7 @@ $(document).ready(function(){
 
 	$("td:nth-child(5)").css("padding", "15px 0");
 	$("td:nth-child(5)").css("text-align", "center");
+	$("td:nth-child(5)").css("vertical-align", "middle");
 	
 	var re = /日本語/;
 	$("td:nth-child(5)").each(function(){
