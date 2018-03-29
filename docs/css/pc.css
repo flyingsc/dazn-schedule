@@ -2,6 +2,7 @@ body {
     background-color: white;
     font-size: 0.85em;
     margin: 0;
+    font-family: sans-serif;
 }
 
 table {
@@ -54,6 +55,10 @@ tr.date-row{
 
 div.container {
     margin: 5px;
+}
+
+#menu li.current_location {
+    border-bottom: solid 2px #007bff;
 }
 
 @media screen and (max-width: 480px) {
