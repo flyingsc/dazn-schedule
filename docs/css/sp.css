@@ -1,6 +1,7 @@
 body {
     background-color: white;
     margin: 0;
+    font-family: sans-serif;
 }
 
 table {
@@ -70,6 +71,10 @@ tr.date-row{
     color: #007bff;
     text-decoration: none;
     line-height: 45px;
+}
+
+#menu li.current_location {
+    border-bottom: solid 2px #007bff;
 }
 
 div#footer{
