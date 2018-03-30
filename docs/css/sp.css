@@ -61,6 +61,7 @@ tr.date-row{
 }
 #menu li{
     float: left;
+    width: 64px;
     width: -webkit-calc(100% / 5);
     width: calc(100% / 5);
 }
