@@ -32,7 +32,7 @@ $(document).ready(function(){
     }
     
     function replaceLocationAfterSearch(search_query){
-	if(window.history){
+	if(history.replaceState){
             if(search_query.length == 1){
                 history.replaceState("", "", location.pathname);
             } else {
@@ -42,7 +42,7 @@ $(document).ready(function(){
     }
 
     function showLocationAfterSearch(search_query){
-	if(window.history){
+	if(history.replaceState){
 	    return;
 	}
 	
