@@ -70,6 +70,7 @@ div.container {
 	width: 100%;
     }
     #menu li {
+	width: 64px;
 	width: -webkit-calc(100% / 5);
 	width: calc(100% / 5);
     }
