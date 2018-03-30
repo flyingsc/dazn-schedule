@@ -42,6 +42,10 @@ $(document).ready(function(){
     }
 
     function showLocationAfterSearch(search_query){
+	if(window.history){
+	    return;
+	}
+	
 	if(search_query.length == 1){
 	    $("#for_bookmark").text("");
 	} else {
