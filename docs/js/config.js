@@ -27,6 +27,15 @@ function checkViewSettingBox(view_setting){
 }
 
 $(function(){
+    try {
+	localStorage.setItem("test", "1");
+	localStorage.removeItem("test");
+    } catch(e) {
+	$("form").hide();
+	$("body").append("<p>プライベートモードになっていませんか?(localStorageにアクセスできません)</p>");
+	return;
+    }
+    
     $.getJSON("/js/genre_tournament.json", null, function(data, status){
 	var genre_tournament = data;
 	var saved_genre = [];
