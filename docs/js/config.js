@@ -36,7 +36,7 @@ $(function(){
 	return;
     }
     
-    $.getJSON("./js/genre_tournament.json", null, function(data, status){
+    $.getJSON("https://flyingsc.github.io/dazn-schedule/js/genre_tournament.json", null, function(data, status){
 	var genre_tournament = data;
 	var saved_genre = [];
 	var saved_tournament = [];
