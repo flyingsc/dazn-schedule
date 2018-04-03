@@ -1,5 +1,7 @@
 body {
     background-color: white;
+    margin: 0;
+    font-family: sans-serif;
 }
 
 table {
@@ -47,4 +49,58 @@ tr:nth-child(even){
 tr.date-row{
     background-color: #707070;
     color: #eeeeee;
+}
+
+#menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    background-color: #f2f2f5;
+}
+#menu li{
+    float: left;
+    width: 64px;
+    width: -webkit-calc(100% / 5);
+    width: calc(100% / 5);
+}
+#menu li a{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    line-height: 45px;
+}
+
+#menu li.current_location {
+    border-bottom: solid 2px #007bff;
+}
+
+div#footer{
+    background-color: #cccccc;
+    color: #171717;
+    z-index: 99;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 0px;
+    border: solid 1px black;
+    font-size: 0.85em;
+}
+
+div.update_time {
+    margin: 1em 0;
+}
+select#genre {
+    margin-bottom: 1em;
+}
+select#tournament {
+    margin-bottom: 0.5em;
+    max-width: calc(100% - 7rem);
+}
+tr.date-row>td {
+    text-align: center;
 }

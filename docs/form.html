@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DAZN番組表 - 動作報告</title>
+<style type="text/css">
+ body {
+   background-color: white;
+   line-height: 1.5em;
+ }
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115865405-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+   document.getElementById("user_agent").value = window.navigator.userAgent;
+ });
+</script>
+</head>
+<body>
+  <form name="report" method="POST" action="./thank-you.html" netlify>
+    <input type="hidden" name="user_agent" id="user_agent">
+    <p>動かなかった部分を選んでください</p>
+    <label><input type="checkbox" name="機能1" value="全部">全部</label><br>
+    <label><input type="checkbox" name="機能2" value="スマホ向けページ">スマホ向けページ</label><br>
+    <label><input type="checkbox" name="機能3" value="ジャンルで検索">ジャンルで検索</label><br>
+    <label><input type="checkbox" name="機能4" value="リーグで検索">リーグで検索</label><br>
+    <label><input type="checkbox" name="機能5" value="検索後のページへのリンク">検索後のページへのリンク</label><br>
+    <label><input type="checkbox" name="機能6" value="お気に入りで検索">お気に入りで検索</label><br>
+    <label><input type="checkbox" name="機能7" value="お気に入りの設定">お気に入りの設定</label><br>
+    <label><input type="checkbox" name="機能8" value="現在時刻へ移動">現在時刻へ移動</label><br>
+    <label><input type="checkbox" name="機能9" value="表示の変更">表示の変更</label><br>
+    <br>
+    <p>不具合を具体的にお書きください</p>
+    <textarea name="詳細" cols="40" rows="5"></textarea>
+    <p>
+      <button type="submit">送信</button>
+    </p>
+  </form>
+</body>
+</html>
+

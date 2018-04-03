@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DAZN番組表 - 設定</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115865405-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./js/config.js"></script>
+<link rel="stylesheet" href="/css/pc.css">
+<style type="text/css">
+ body{
+   background-color: white;
+   font-size: 1em;
+ }
+ p {
+   line-height: 1.5em;
+ }
+ 
+ label {
+   display: inline-block;
+   width: 20em;
+   line-height: 1.8em;
+ }
+ 
+ button {
+   margin: 10px 0px;
+ }
+ #menu {
+   font-size: 0.85em;
+ }
+</style>
+</head>
+<body>
+  <div id="menu"><ul>
+      <li><a href="./">番組表</a></li>
+      <li><a href="./sp/">スマホ用</a></li>
+      <li><a href="past.html">過去番組</a></li>
+      <li><a href="changelog.html">更新履歴</a></li>
+      <li class="current_location"><a href="config.html">設定</a></li>
+    </ul>
+    </div>
+  <form>
+    <p>番組表を表示する際の設定を選択してください</p>
+    <fieldset>
+      <legend>表示設定</legend>
+      <label><input type="checkbox" name="view" value="hide_row">検索後、ジャンルやリーグを表示しない</label>
+      <label><input type="checkbox" name="view" value="below_commentator">実況・解説を下部表示する(※1)</label>
+    </fieldset>
+    <p>※1:日本語実況・解説がある場合は△、実況・解説が確定している場合は○を表示します。○をクリックすると実況・解説が画面下部に表示されます。表示されたものを消したい場合は表示された下部をクリックしてください。</p>
+    <p>お気に入りのスポーツを選択してください</p>
+    <fieldset id="genre">
+      <legend>お気に入りのスポーツ</legend>
+    </fieldset>
+    <p>お気に入りのスポーツの中で除外したいリーグ、大会がある場合は選択してください</p>
+    <fieldset id="tournament">
+      <legend>除外したいリーグ・大会</legend>
+    </fieldset>
+    <button type="button">保存する</button>
+  </form>
+</body>
+</html>
