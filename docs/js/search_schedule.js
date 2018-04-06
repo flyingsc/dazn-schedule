@@ -20,9 +20,16 @@ $(document).ready(function(){
 		}
 	    }
 	});
+
+	var table_header = null;
+	if($("th").length > 0){
+	    table_header = "<tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>";
+	}
 	
 	$("table").empty();
-	$("table").append("<tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>")
+	if(table_header){
+	    $("table").append(table_header);
+	}
 	
 	$.each(dates.reverse(), function(index, date){
 	    $("table").append(date);
