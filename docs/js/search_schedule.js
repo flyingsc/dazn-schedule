@@ -1,20 +1,64 @@
 $(document).ready(function(){
+    function reverseSchedule(){
+	var dates = [];
+	var programs = {};
+	
+	$("tr").each(function(){
+	    if($(this).attr("class") == "date-row"){
+		dates.push(this);
+	    } else {
+		if(dates.length == 0){
+		    return true;
+		}
+		
+		var date = dates[dates.length - 1].innerText;
+		
+		if(programs[date]){
+		    programs[date].push(this);
+		} else {
+		    programs[date] = [this];
+		}
+	    }
+	});
+
+	var table_header = null;
+	if($("th").length > 0){
+	    table_header = "<tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>";
+	}
+	
+	$("table").empty();
+	if(table_header){
+	    $("table").append(table_header);
+	}
+	
+	$.each(dates.reverse(), function(index, date){
+	    $("table").append(date);
+	    
+	    $.each(programs[date.innerText], function(i, row){
+		$("table").append(row);
+	    });
+	});
+    }
+    
     function loadUserSetting(){
 	var favorite_genre;
 	var excluded_tournament;
 	var view_setting;
+	var date_order;
 	
 	try {
 	    favorite_genre = JSON.parse(localStorage.getItem("genre"));
 	    excluded_tournament = JSON.parse(localStorage.getItem("tournament"));
 	    view_setting = JSON.parse(localStorage.getItem("view"));
+	    date_order = localStorage.getItem("date_order");
 	} catch(e) {
 	    favorite_genre = [];
 	    excluded_tournament = [];
 	    view_setting = [];
+	    date_order = "asc";
 	}
 
-	return [favorite_genre, excluded_tournament, view_setting];
+	return [favorite_genre, excluded_tournament, view_setting, date_order];
     }
 
     function createSearchQuery(genre, tournament){
@@ -229,12 +273,14 @@ $(document).ready(function(){
     var favorite_genre;
     var excluded_tournament;
     var view_setting;
+    var date_order;
     
     var a = loadUserSetting();
     favorite_genre = a[0];
     excluded_tournament = a[1];
     view_setting = a[2];
-
+    date_order = a[3];
+    
     if($.inArray("below_commentator", view_setting) >= 0){
 	shortenCommentator();
 	
@@ -248,6 +294,11 @@ $(document).ready(function(){
 	}
     }
 
+    if(date_order == "desc"){
+	reverseSchedule();
+	$("a#reverse_schedule").text("日付昇順で表示");
+    }
+    
     $("a#current_time").click(function(){
 	moveCurrentTime();
     });
@@ -301,6 +352,23 @@ $(document).ready(function(){
 	}
     });
 
+    $("a#reverse_schedule").click(function(){
+	reverseSchedule();
+	
+	if(date_order == "desc"){
+	    date_order = "asc";
+	    $("a#reverse_schedule").text("日付降順で表示");
+	} else {
+	    date_order = "desc";
+	    $("a#reverse_schedule").text("日付昇順で表示");
+	}
+
+	try{
+	    localStorage.setItem("date_order", date_order);
+	} catch(e){
+	    console.log("localStorage can not save.");
+	}
+    });
+    
     applySearchQuery();
 });
-
