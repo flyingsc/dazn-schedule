@@ -295,8 +295,10 @@ $(document).ready(function(){
     }
 
     if(date_order == "desc"){
-	reverseSchedule();
-	$("a#reverse_schedule").text("日付昇順で表示");
+	if(location.pathname.substring(location.pathname.length - 9) === "past.html"){
+	    reverseSchedule();
+	    $("a#reverse_schedule").text("日付昇順で表示");
+	}
     }
     
     $("a#current_time").click(function(){
