@@ -6,6 +6,7 @@ body {
 }
 
 table {
+/*    
     border-collapse: separate;
     border-spacing: 0;
     empty-cells: show;
@@ -13,15 +14,24 @@ table {
     border-right: none;
     border-bottom: none;
     border-left: 1px solid #bbbbbb;
+*/
+    border-collapse: collapse;
 }
 
 td, th {
+/*    
     border-top: none;
     border-right: 1px solid #bbbbbb;
     border-bottom: 1px solid #bbbbbb;
     border-left:none;
+*/    
+    border: 1px solid #bbbbbb;
     text-align: left;
     padding: 8px;
+}
+
+tr {
+    page-break-inside: avoid;
 }
 
 tr:nth-child(even){
