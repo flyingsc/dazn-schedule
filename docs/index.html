@@ -30,7 +30,7 @@
 <div id="footer" style="display:none;"></div>
 <div class="container">
   
-<!-- <div class="update_time">更新: 2018年07月12日 18:56</div> -->
+<!-- <div class="update_time">更新: 2018年07月13日 08:00</div> -->
 <div id="for_bookmark"></div>
 <p>不具合があった場合は<a href="https://dazn-schedule.netlify.com/form.html">こちら</a> <a href="./freeze_chrome.html">(Chromeが固まる方へ)</a></p>
 <p>個人設定を追加しました</p>
@@ -50,6 +50,7 @@
 <option value="テニス">テニス</option>
 <option value="フィッシング">フィッシング</option>
 <option value="モータースポーツ">モータースポーツ</option>
+<option value="競馬">競馬</option>
 <option value="総合格闘技">総合格闘技</option>
 <option value="野球">野球</option>
 </select><br/>
@@ -57,6 +58,7 @@
 リーグで検索：<select id="tournament">
 <option value="全て">全て</option>
 <option value="F1" class="モータースポーツ">F1</option>
+<option value="GP3" class="モータースポーツ">GP3</option>
 <option value="ICC" class="サッカー">ICC</option>
 <option value="J1リーグ" class="サッカー">J1リーグ</option>
 <option value="J2リーグ" class="サッカー">J2リーグ</option>
@@ -66,6 +68,7 @@
 <option value="RBCカナディアン・オープン" class="ゴルフ">RBCカナディアン・オープン</option>
 <option value="UFC" class="総合格闘技">UFC</option>
 <option value="WWE" class="WWE">WWE</option>
+<option value="アスコット" class="競馬">アスコット</option>
 <option value="グローリー" class="キックボクシング">グローリー</option>
 <option value="ジョンディア・クラシック" class="ゴルフ">ジョンディア・クラシック</option>
 <option value="スウェーデン・オープン" class="テニス">スウェーデン・オープン</option>
@@ -81,12 +84,6 @@
 </select><br/>
 <table>
 <tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>
-<tr class="date-row"><td colspan="5" rowspan="1"><b>7月12日（木曜日）</b></td></tr>
-<tr><td class="date">01:35</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ナショナルズ vs パイレーツ</td><td></td></tr>
-<tr><td class="date">08:05</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ヤンキース vs オリオールズ</td><td></td></tr>
-<tr><td class="date">09:40</td><td class="genre">野球</td><td class="tournament">MLB</td><td>Dバックス vs ロッキーズ</td><td></td></tr>
-<tr><td class="date">11:07</td><td class="genre">野球</td><td class="tournament">MLB</td><td>マリナーズ vs エンゼルス</td><td>解説：多村仁志 実況：谷口廣明</td></tr>
-<tr><td class="date">21:00</td><td class="genre">ゴルフ</td><td class="tournament">ジョンディア・クラシック</td><td>初日</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>7月13日（金曜日）</b></td></tr>
 <tr><td class="date">03:10</td><td class="genre">野球</td><td class="tournament">MLB</td><td>アスレチックス vs アストロズ</td><td></td></tr>
 <tr><td class="date">04:10</td><td class="genre">野球</td><td class="tournament">MLB</td><td>Dバックス vs ロッキーズ</td><td></td></tr>
@@ -94,6 +91,7 @@
 <tr><td class="date">11:07</td><td class="genre">野球</td><td class="tournament">MLB</td><td>マリナーズ vs エンゼルス</td><td>解説：多村仁志 実況：谷口廣明</td></tr>
 <tr><td class="date">19:30</td><td class="genre">ダーツ</td><td class="tournament">上海マスターズ</td><td>初日</td><td></td></tr>
 <tr><td class="date">21:00</td><td class="genre">ゴルフ</td><td class="tournament">ジョンディア・クラシック</td><td>第2日</td><td></td></tr>
+<tr><td class="date">22:15</td><td class="genre">競馬</td><td class="tournament">アスコット</td><td>サマー・マイル・レーシング・ウィークエンド：金曜日</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>7月14日（土曜日）</b></td></tr>
 <tr><td class="date">08:10</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ヤンキース vs インディアンス</td><td></td></tr>
 <tr><td class="date">08:10</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ブルージェイズ vs レッドソックス</td><td></td></tr>
@@ -149,8 +147,8 @@
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>バファローズ vs ファイターズ</td><td>解説：星野伸之 実況：濱野圭司 リポーター：竹村美緒</td></tr>
 <tr><td class="date">18:15</td><td class="genre">野球</td><td class="tournament">NPB</td><td>マリーンズ vs イーグルス</td><td>解説：黒木知宏 実況：加藤暁 リポーター：木下貴道</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>7月18日（水曜日）</b></td></tr>
+<tr><td class="date">08:30</td><td class="genre">野球</td><td class="tournament">MLB</td><td>オールスターゲーム2018</td><td>解説：ウォーレン・クロマティ 実況：林正浩</td></tr>
 <tr><td class="date">09:00</td><td class="genre">WWE</td><td class="tournament">WWE</td><td>SmackDown #987</td><td>解説：斎藤文彦 実況：市川勝也</td></tr>
-<tr><td class="date">09:00</td><td class="genre">野球</td><td class="tournament">MLB</td><td>オールスターゲーム2018</td><td>解説：ウォーレン・クロマティ 実況：林正浩</td></tr>
 <tr><td class="date">17:45</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ベイスターズ vs スワローズ</td><td>​解説：斉藤和巳 実況：吉田伸男</td></tr>
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>タイガース vs ジャイアンツ</td><td>日本語解説あり 実況：寺西裕一 リポーター：村田匡輝</td></tr>
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ホークス vs ライオンズ</td><td>解説：坊西浩嗣 実況：信川竜太 リポーター：海里</td></tr>
@@ -314,6 +312,22 @@
 <tr><td class="date">18:00</td><td class="genre">テニス</td><td class="tournament">江西省オープン</td><td>第4日</td><td></td></tr>
 <tr><td class="date">20:00</td><td class="genre">ゴルフ</td><td class="tournament">RBCカナディアン・オープン</td><td>初日</td><td></td></tr>
 <tr><td class="date">20:35</td><td class="genre">サッカー</td><td class="tournament">ICC</td><td>アトレティコ vs アーセナル</td><td>日本語実況・解説あり</td></tr>
+<tr class="date-row"><td colspan="5" rowspan="1"><b>7月27日（金曜日）</b></td></tr>
+<tr><td class="date">05:07</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ホワイトソックス vs エンゼルス</td><td>解説：木村康之 実況：深澤慶</td></tr>
+<tr><td class="date">08:05</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ロイヤルズ vs ヤンキース</td><td></td></tr>
+<tr><td class="date">08:10</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ツインズ vs レッドソックス</td><td></td></tr>
+<tr><td class="date">09:05</td><td class="genre">野球</td><td class="tournament">MLB</td><td>アスレチックス vs レンジャーズ</td><td></td></tr>
+<tr><td class="date">17:00</td><td class="genre">テニス</td><td class="tournament">江西省オープン</td><td>準々決勝</td><td></td></tr>
+<tr><td class="date">17:00</td><td class="genre">テニス</td><td class="tournament">モスクワ・リバー・カップ</td><td>準々決勝</td><td></td></tr>
+<tr><td class="date">18:00</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>FORMULA 1 2018 ハンガリーグランプリ：フリー走行1回目</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ホークス vs イーグルス</td><td>日本語解説・実況あり</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>カープ vs ベイスターズ</td><td>日本語解説・実況あり</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ファイターズ vs バファローズ</td><td>日本語解説・実況あり</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>スワローズ vs タイガース</td><td>解説：野村弘樹 実況：竹下陽平</td></tr>
+<tr><td class="date">18:55</td><td class="genre">モータースポーツ</td><td class="tournament">GP3</td><td>ハンガリー：フリー走行</td><td></td></tr>
+<tr><td class="date">19:00</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td>フライデーナイトJリーグ FC東京 vs 長崎</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">20:00</td><td class="genre">ゴルフ</td><td class="tournament">RBCカナディアン・オープン</td><td>第2日</td><td></td></tr>
+<tr><td class="date">22:00</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>FORMULA 1 2018 ハンガリーグランプリ：フリー走行2回目</td><td>日本語実況・解説あり</td></tr>
 </table>
 </div>
 </body>
