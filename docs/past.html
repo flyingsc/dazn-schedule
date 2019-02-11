@@ -34,7 +34,6 @@
 ジャンルで検索：<select id="genre">
 <option value="全て">全て</option>
 <option value="お気に入り">お気に入り</option>
-<option value="アメフト">アメフト</option>
 <option value="ゴルフ">ゴルフ</option>
 <option value="サッカー">サッカー</option>
 <option value="ダーツ">ダーツ</option>
@@ -53,13 +52,12 @@
 <option value="B1" class="バスケットボール">B1</option>
 <option value="DFBポカール" class="サッカー">DFBポカール</option>
 <option value="ISPSハンダ・ヴィック・オープン" class="ゴルフ">ISPSハンダ・ヴィック・オープン</option>
-<option value="NFL" class="アメフト">NFL</option>
 <option value="PLD" class="ダーツ">PLD</option>
-<option value="UCIアメリカツアー" class="自転車競技">UCIアメリカツアー</option>
 <option value="UCIヨーロッパツアー" class="自転車競技">UCIヨーロッパツアー</option>
 <option value="V1女子" class="バレーボール">V1女子</option>
 <option value="V1男子" class="バレーボール">V1男子</option>
 <option value="エールディヴィジ" class="サッカー">エールディヴィジ</option>
+<option value="カタール・トタル・オープン" class="テニス">カタール・トタル・オープン</option>
 <option value="コパ・デル・レイ" class="サッカー">コパ・デル・レイ</option>
 <option value="スュペル・リグ" class="サッカー">スュペル・リグ</option>
 <option value="セリエA" class="サッカー">セリエA</option>
@@ -73,19 +71,6 @@
 </select><br/>
 <table>
 <tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>
-<tr class="date-row"><td colspan="5" rowspan="1"><b>2月4日（月曜日）</b></td></tr>
-<tr><td class="date">00:15</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>ベティス vs アトレティコ</td><td>実況：若月弘一郎</td></tr>
-<tr><td class="date">01:00</td><td class="genre">サッカー</td><td class="tournament">スュペル・リグ</td><td>アンタルヤスポル vs ベシクタシュ（香川真司出場）</td><td></td></tr>
-<tr><td class="date">01:30</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>マンチェスター・C vs アーセナル</td><td>解説：戸田和幸 実況：永田実</td></tr>
-<tr><td class="date">02:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>インテル vs ボローニャ</td><td></td></tr>
-<tr><td class="date">02:30</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>エイバル vs ジローナ</td><td></td></tr>
-<tr><td class="date">04:15</td><td class="genre">自転車トラックレース</td><td class="tournament">6日間レース</td><td>コペンハーゲン：第4日</td><td></td></tr>
-<tr><td class="date">04:30</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>ローマ vs ミラン</td><td>実況：北川義隆</td></tr>
-<tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>レアル・マドリード vs アラベス</td><td>解説：川勝良一 実況：福田浩大</td></tr>
-<tr><td class="date">05:00</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td>リヨン vs PSG</td><td>実況：西達彦</td></tr>
-<tr><td class="date">06:30</td><td class="genre">自転車競技</td><td class="tournament">UCIアメリカツアー</td><td>ブエルタ・ア・サンフアン：ステージ7</td><td>実況：小俣雄風太</td></tr>
-<tr><td class="date">08:30</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>Super Bowl LIII：ペイトリオッツ @ ラムズ（7:50～カンニング竹山のSuper Bowl講座）</td><td>解説：井上友綱 実況：ザック生馬</td></tr>
-<tr><td class="date">08:30</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>Super Bowl LIII：ペイトリオッツ @ ラムズ（英語実況）</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>2月5日（火曜日）</b></td></tr>
 <tr><td class="date">03:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>フロジノーネ vs ラツィオ</td><td></td></tr>
 <tr><td class="date">04:55</td><td class="genre">自転車トラックレース</td><td class="tournament">6日間レース</td><td>コペンハーゲン：第5日</td><td></td></tr>
@@ -193,6 +178,16 @@
 <tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>サンプドリア vs フロジノーネ</td><td></td></tr>
 <tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>アタランタ vs SPAL</td><td></td></tr>
 <tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td>トゥールーズ vs ランス（昌子源）</td><td></td></tr>
+<tr class="date-row"><td colspan="5" rowspan="1"><b>2月11日（月曜日）</b></td></tr>
+<tr><td class="date">00:15</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>バレンシア vs ソシエダ</td><td></td></tr>
+<tr><td class="date">01:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>マンチェスター・C vs チェルシー</td><td>解説：柱谷幸一 実況：永田実</td></tr>
+<tr><td class="date">01:00</td><td class="genre">サッカー</td><td class="tournament">スュペル・リグ</td><td>ガラタサライ vs トラブゾン（長友佑都）</td><td>実況：河村太朗</td></tr>
+<tr><td class="date">02:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>サッスオーロ vs ユヴェントス</td><td></td></tr>
+<tr><td class="date">02:30</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>セビージャ vs エイバル</td><td></td></tr>
+<tr><td class="date">04:30</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>ミラン vs カリアリ</td><td></td></tr>
+<tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>ビルバオ vs バルセロナ</td><td>解説：川勝良一 実況：野村明弘</td></tr>
+<tr><td class="date">16:05</td><td class="genre">バスケットボール</td><td class="tournament">B1</td><td>三河 vs 秋田</td><td>解説：小野田大祐 実況：折出賢一</td></tr>
+<tr><td class="date">21:30</td><td class="genre">テニス</td><td class="tournament">カタール・トタル・オープン</td><td>初日</td><td></td></tr>
 </table>
 </div>
 </body>
