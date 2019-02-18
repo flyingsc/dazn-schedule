@@ -39,7 +39,6 @@
 <option value="セーリング">セーリング</option>
 <option value="ダーツ">ダーツ</option>
 <option value="テニス">テニス</option>
-<option value="バスケットボール">バスケットボール</option>
 <option value="バレーボール">バレーボール</option>
 <option value="ラグビーユニオン">ラグビーユニオン</option>
 <option value="競馬">競馬</option>
@@ -49,13 +48,13 @@
 リーグで検索：<select id="tournament">
 <option value="全て">全て</option>
 <option value="Aリーグ" class="サッカー">Aリーグ</option>
-<option value="B1" class="バスケットボール">B1</option>
 <option value="FAカップ" class="サッカー">FAカップ</option>
 <option value="ISPSハンダ・ワールド・スーパー6・パース" class="ゴルフ">ISPSハンダ・ワールド・スーパー6・パース</option>
 <option value="J1リーグ" class="サッカー">J1リーグ</option>
 <option value="PLD" class="ダーツ">PLD</option>
 <option value="UEFAチャンピオンズリーグ" class="サッカー">UEFAチャンピオンズリーグ</option>
 <option value="UEFAヨーロッパリーグ" class="サッカー">UEFAヨーロッパリーグ</option>
+<option value="UFC" class="総合格闘技">UFC</option>
 <option value="V1女子" class="バレーボール">V1女子</option>
 <option value="V1男子" class="バレーボール">V1男子</option>
 <option value="アスコット" class="競馬">アスコット</option>
@@ -64,6 +63,7 @@
 <option value="スュペル・リグ" class="サッカー">スュペル・リグ</option>
 <option value="セリエA" class="サッカー">セリエA</option>
 <option value="セールGP" class="セーリング">セールGP</option>
+<option value="ドバイ・テニス選手権" class="テニス">ドバイ・テニス選手権</option>
 <option value="プレミアシップラグビー" class="ラグビーユニオン">プレミアシップラグビー</option>
 <option value="プレミアリーグ" class="サッカー">プレミアリーグ</option>
 <option value="ベラトール" class="総合格闘技">ベラトール</option>
@@ -72,16 +72,6 @@
 </select><br/>
 <table>
 <tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>
-<tr class="date-row"><td colspan="5" rowspan="1"><b>2月11日（月曜日）</b></td></tr>
-<tr><td class="date">00:15</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>バレンシア vs ソシエダ</td><td></td></tr>
-<tr><td class="date">01:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>マンチェスター・C vs チェルシー</td><td>解説：柱谷幸一 実況：永田実</td></tr>
-<tr><td class="date">01:00</td><td class="genre">サッカー</td><td class="tournament">スュペル・リグ</td><td>ガラタサライ vs トラブゾン（長友佑都）</td><td>実況：河村太朗</td></tr>
-<tr><td class="date">02:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>サッスオーロ vs ユヴェントス</td><td></td></tr>
-<tr><td class="date">02:30</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>セビージャ vs エイバル</td><td></td></tr>
-<tr><td class="date">04:30</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>ミラン vs カリアリ</td><td></td></tr>
-<tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>ビルバオ vs バルセロナ</td><td>解説：川勝良一 実況：野村明弘</td></tr>
-<tr><td class="date">16:05</td><td class="genre">バスケットボール</td><td class="tournament">B1</td><td>三河 vs 秋田</td><td>解説：小野田大祐 実況：折出賢一</td></tr>
-<tr><td class="date">21:30</td><td class="genre">テニス</td><td class="tournament">カタール・トタル・オープン</td><td>初日</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>2月12日（火曜日）</b></td></tr>
 <tr><td class="date">05:00</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>アラベス vs レバンテ（乾貴士）</td><td>実況：桑原学</td></tr>
 <tr><td class="date">05:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>ウォルヴァーハンプトン vs ニューカッスル（武藤嘉紀）</td><td>実況：喜谷知純</td></tr>
@@ -174,6 +164,18 @@
 <tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>エンポリ vs サッスオーロ</td><td></td></tr>
 <tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td>ボルドー vs トゥールーズ（昌子源）</td><td></td></tr>
 <tr><td class="date">23:01</td><td class="genre">バレーボール</td><td class="tournament">V1男子</td><td>東レ vs 大分三好</td><td></td></tr>
+<tr class="date-row"><td colspan="5" rowspan="1"><b>2月18日（月曜日）</b></td></tr>
+<tr><td class="date">00:10</td><td class="genre">テニス</td><td class="tournament">ドバイ・テニス選手権</td><td>ムグルサ vs ヤストレムスカ：1回戦</td><td></td></tr>
+<tr><td class="date">00:15</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>バレンシア vs エスパニョール</td><td></td></tr>
+<tr><td class="date">01:00</td><td class="genre">サッカー</td><td class="tournament">スュペル・リグ</td><td>カスムパシャ vs ガラタサライ（長友佑都）</td><td>実況：河村太朗</td></tr>
+<tr><td class="date">02:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>インテル vs サンプドリア</td><td></td></tr>
+<tr><td class="date">02:30</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>ビジャレアル vs セビージャ</td><td></td></tr>
+<tr><td class="date">04:30</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>ナポリ vs トリノ</td><td></td></tr>
+<tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>ベティス vs アラベス（乾貴士）</td><td>実況：桑原学</td></tr>
+<tr><td class="date">05:00</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td>サンテティエンヌ vs PSG</td><td>実況：西達彦</td></tr>
+<tr><td class="date">11:00</td><td class="genre">総合格闘技</td><td class="tournament">UFC</td><td>ファイトナイト：ガヌー vs ヴェラスケス</td><td>解説：宇野薫 実況：西達彦</td></tr>
+<tr><td class="date">18:25</td><td class="genre">テニス</td><td class="tournament">ドバイ・テニス選手権</td><td>ゲルゲス vs リスク：2回戦</td><td></td></tr>
+<tr><td class="date">22:00</td><td class="genre">テニス</td><td class="tournament">ドバイ・テニス選手権</td><td>チュー・リン vs メルテンス：2回戦</td><td></td></tr>
 </table>
 </div>
 </body>
