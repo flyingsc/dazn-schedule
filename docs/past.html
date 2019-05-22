@@ -38,7 +38,6 @@
 <option value="サッカー">サッカー</option>
 <option value="ダーツ">ダーツ</option>
 <option value="テニス">テニス</option>
-<option value="バスケットボール">バスケットボール</option>
 <option value="ラグビーユニオン">ラグビーユニオン</option>
 <option value="自転車競技">自転車競技</option>
 <option value="野球">野球</option>
@@ -46,7 +45,6 @@
 
 リーグで検索：<select id="tournament">
 <option value="全て">全て</option>
-<option value="B1" class="バスケットボール">B1</option>
 <option value="BNLイタリア国際" class="テニス">BNLイタリア国際</option>
 <option value="FAカップ" class="サッカー">FAカップ</option>
 <option value="J1リーグ" class="サッカー">J1リーグ</option>
@@ -61,6 +59,7 @@
 <option value="エールディヴィジ" class="サッカー">エールディヴィジ</option>
 <option value="コッパ・イタリア" class="サッカー">コッパ・イタリア</option>
 <option value="ゴルフ・チャンネル" class="ゴルフ">ゴルフ・チャンネル</option>
+<option value="ストラスブール国際" class="テニス">ストラスブール国際</option>
 <option value="スュペル・リグ" class="サッカー">スュペル・リグ</option>
 <option value="セリエA" class="サッカー">セリエA</option>
 <option value="トルコ・カップ" class="サッカー">トルコ・カップ</option>
@@ -70,19 +69,6 @@
 </select><br/>
 <table>
 <tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>
-<tr class="date-row"><td colspan="5" rowspan="1"><b>5月15日（水曜日）</b></td></tr>
-<tr><td class="date">02:40</td><td class="genre">テニス</td><td class="tournament">BNLイタリア国際</td><td>スビトリナ vs アザレンカ：2回戦</td><td></td></tr>
-<tr><td class="date">08:10</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ロッキーズ vs レッドソックス</td><td></td></tr>
-<tr><td class="date">08:20</td><td class="genre">野球</td><td class="tournament">MLB</td><td>カージナルス vs ブレーブス</td><td></td></tr>
-<tr><td class="date">08:40</td><td class="genre">野球</td><td class="tournament">MLB</td><td>エンゼルス vs ツインズ</td><td>解説：仁志敏久 実況：深澤慶</td></tr>
-<tr><td class="date">13:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>イーグルス vs ファイターズ</td><td>解説：川崎憲次郎 実況：中田浩光 リポーター：倉林知子</td></tr>
-<tr><td class="date">17:45</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ベイスターズ vs ドラゴンズ</td><td>解説：佐伯貴弘 実況：深澤慶</td></tr>
-<tr><td class="date">18:00</td><td class="genre">バスケットボール</td><td class="tournament">B1</td><td>B.LEAGUE AWARD SHOW 2018-19</td><td>MC：別所哲也、畠山愛理</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ジャイアンツ vs タイガース</td><td>解説：赤星憲広 実況：山本健太</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ホークス vs ライオンズ</td><td>解説：柴原洋 実況：石黒新平 リポーター：海里</td></tr>
-<tr><td class="date">18:15</td><td class="genre">野球</td><td class="tournament">NPB</td><td>マリーンズ vs バファローズ</td><td>解説：薮田安彦 実況：清水久嗣 リポーター：南隼人</td></tr>
-<tr><td class="date">20:45</td><td class="genre">自転車競技</td><td class="tournament">UCIワールドツアー</td><td>ジロ・デ・イタリア：ステージ5</td><td>解説：水垣偉弥 実況：木下貴道</td></tr>
-<tr><td class="date">22:30</td><td class="genre">自転車競技</td><td class="tournament">UCIヨーロッパツアー</td><td>ダンケルク4日間レース：ステージ2</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>5月16日（木曜日）</b></td></tr>
 <tr><td class="date">02:10</td><td class="genre">野球</td><td class="tournament">MLB</td><td>エンゼルス vs ツインズ</td><td>解説：木村康之 実況：石原敬士</td></tr>
 <tr><td class="date">02:30</td><td class="genre">サッカー</td><td class="tournament">エールディヴィジ</td><td>ユトレヒト vs ヘーレンフェーン（小林祐希）</td><td></td></tr>
@@ -212,6 +198,21 @@
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ファイターズ vs イーグルス</td><td>解説：岩本勉 実況：近藤祐司 リポーター：草野あずみ</td></tr>
 <tr><td class="date">18:30</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ライオンズ vs ホークス</td><td>解説：小関竜也 実況：谷口廣明 リポーター：加藤暁</td></tr>
 <tr><td class="date">20:35</td><td class="genre">自転車競技</td><td class="tournament">UCIワールドツアー</td><td>ジロ・デ・イタリア：ステージ10</td><td>解説：土井雪広 実況：南隼人</td></tr>
+<tr class="date-row"><td colspan="5" rowspan="1"><b>5月22日（水曜日）</b></td></tr>
+<tr><td class="date">00:00</td><td class="genre">ゴルフ</td><td class="tournament">ゴルフ・チャンネル</td><td>NCAA女子ゴルフ選手権：団体 準々決勝</td><td></td></tr>
+<tr><td class="date">03:45</td><td class="genre">サッカー</td><td class="tournament">エールディヴィジ</td><td>フィテッセ vs フローニンゲン：プレーオフ準決勝第2戦（堂安律、板倉滉）</td><td></td></tr>
+<tr><td class="date">08:05</td><td class="genre">野球</td><td class="tournament">MLB</td><td>フィリーズ vs カブス</td><td></td></tr>
+<tr><td class="date">08:07</td><td class="genre">野球</td><td class="tournament">MLB</td><td>レッドソックス vs ブルージェイズ</td><td></td></tr>
+<tr><td class="date">09:05</td><td class="genre">野球</td><td class="tournament">MLB</td><td>マリナーズ vs レンジャーズ</td><td></td></tr>
+<tr><td class="date">11:07</td><td class="genre">野球</td><td class="tournament">MLB</td><td>ツインズ vs エンゼルス</td><td>解説：福島良一 実況：北川義隆</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ジャイアンツ vs ベイスターズ</td><td>解説：中畑清 実況：佐藤義明</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>タイガース vs スワローズ</td><td>解説：野口寿浩 実況：楠淳生 リポーター：桐山隆</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>バファローズ vs マリーンズ</td><td>解説：小川博文 実況：濱野圭司 リポーター：佐久間むつみ</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ファイターズ vs イーグルス</td><td>解説：建山義紀 実況：近藤祐司 リポーター：草野あずみ</td></tr>
+<tr><td class="date">18:00</td><td class="genre">テニス</td><td class="tournament">ストラスブール国際</td><td>初日</td><td></td></tr>
+<tr><td class="date">18:30</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ライオンズ vs ホークス</td><td>解説：小関竜也 実況：加藤暁 リポーター：谷口廣明</td></tr>
+<tr><td class="date">20:05</td><td class="genre">自転車競技</td><td class="tournament">UCIワールドツアー</td><td>ジロ・デ･イタリア：ステージ11</td><td>解説：宮澤崇史 実況：木下貴道</td></tr>
+<tr><td class="date">22:00</td><td class="genre">ゴルフ</td><td class="tournament">ゴルフ・チャンネル</td><td>NCAA女子ゴルフ選手権：団体 準決勝</td><td></td></tr>
 </table>
 </div>
 </body>
