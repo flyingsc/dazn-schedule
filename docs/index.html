@@ -30,7 +30,7 @@
 <div id="footer" style="display:none;"></div>
 <div class="container">
   
-<!-- <div class="update_time">更新: 2020年03月04日 20:28</div> -->
+<!-- <div class="update_time">更新: 2020年03月05日 07:41</div> -->
 <div id="for_bookmark"></div>
 <!-- <p>不具合があった場合は<a href="https://dazn-schedule.netlify.com/form.html">こちら</a> <a href="./freeze_chrome.html">(Chromeが固まる方へ)</a></p> -->
 <p>個人設定を追加しました</p>
@@ -42,6 +42,7 @@
 ジャンルで検索：<select id="genre">
 <option value="全て">全て</option>
 <option value="お気に入り">お気に入り</option>
+<option value="ゴルフ">ゴルフ</option>
 <option value="サッカー">サッカー</option>
 <option value="ダーツ">ダーツ</option>
 <option value="テニス">テニス</option>
@@ -55,6 +56,7 @@
 リーグで検索：<select id="tournament">
 <option value="全て">全て</option>
 <option value="B1" class="バスケットボール">B1</option>
+<option value="BNPパリバ・オープン" class="テニス">BNPパリバ・オープン</option>
 <option value="DFBポカール" class="サッカー">DFBポカール</option>
 <option value="F1" class="モータースポーツ">F1</option>
 <option value="FAカップ" class="サッカー">FAカップ</option>
@@ -68,6 +70,7 @@
 <option value="クイッグ vs. キャロル" class="ボクシング">クイッグ vs. キャロル</option>
 <option value="コッパ・イタリア" class="サッカー">コッパ・イタリア</option>
 <option value="コパ・デル・レイ" class="サッカー">コパ・デル・レイ</option>
+<option value="コマーシャル・バンク・カタールマスターズ" class="ゴルフ">コマーシャル・バンク・カタールマスターズ</option>
 <option value="セリエA" class="サッカー">セリエA</option>
 <option value="トップリーグ" class="ラグビーユニオン">トップリーグ</option>
 <option value="プレミアシップラグビー" class="ラグビーユニオン">プレミアシップラグビー</option>
@@ -78,29 +81,20 @@
 </select><br/>
 <table>
 <tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>
-<tr class="date-row"><td colspan="5" rowspan="1"><b>3月4日（水曜日）</b></td></tr>
-<tr><td class="date">02:30</td><td class="genre">サッカー</td><td class="tournament">DFBポカール</td><td>ザールブリュッケン vs デュッセルドルフ：準々決勝</td><td></td></tr>
-<tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">FAカップ</td><td>チェルシー vs リヴァプール：5回戦（南野拓実）</td><td>解説：川勝良一 実況：野村明弘</td></tr>
-<tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">DFBポカール</td><td>シャルケ vs バイエルン：準々決勝</td><td></td></tr>
-<tr><td class="date">05:00</td><td class="genre">サッカー</td><td class="tournament">FAカップ</td><td>レディング vs シェフィールド・U：5回戦</td><td></td></tr>
-<tr><td class="date">05:00</td><td class="genre">サッカー</td><td class="tournament">FAカップ</td><td>WBA vs ニューカッスル：5回戦（武藤嘉紀）</td><td></td></tr>
-<tr><td class="date">14:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>オープン戦：オリックス vs ロッテ</td><td>解説：塩崎真 実況：濱野圭司 リポーター：羽村亜美</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>オープン戦：ソフトバンク vs ヤクルト</td><td>解説：柴原洋 実況：加藤暁 リポーター：海里</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>オープン戦：日本ハム vs 巨人</td><td>解説：森本稀哲 実況：近藤祐司</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>3月5日（木曜日）</b></td></tr>
 <tr><td class="date">02:30</td><td class="genre">サッカー</td><td class="tournament">DFBポカール</td><td>レヴァークーゼン vs ウニオン・ベルリン：準々決勝</td><td></td></tr>
 <tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">FAカップ</td><td>シェフィールド・W vs マンチェスター・C：5回戦</td><td></td></tr>
 <tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">FAカップ</td><td>レスター vs バーミンガム：5回戦</td><td></td></tr>
 <tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">FAカップ</td><td>トッテナム vs ノリッジ：5回戦</td><td></td></tr>
 <tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">DFBポカール</td><td>フランクフルト vs ブレーメン：準々決勝（長谷部誠、鎌田大地／大迫勇也）</td><td>実況：安井成行</td></tr>
-<tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">コッパ・イタリア</td><td>【試合延期】ユヴェントス vs ミラン：準決勝第2戦</td><td></td></tr>
 <tr><td class="date">05:00</td><td class="genre">サッカー</td><td class="tournament">コパ・デル・レイ</td><td>ミランデス vs ソシエダ：準決勝第2戦</td><td></td></tr>
+<tr><td class="date">16:30</td><td class="genre">ゴルフ</td><td class="tournament">コマーシャル・バンク・カタールマスターズ</td><td>ラウンド1：セッション1（川村昌弘出場予定）</td><td></td></tr>
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>オープン戦：ソフトバンク vs ヤクルト</td><td>解説：加藤伸一 実況：加藤暁 リポーター：海里</td></tr>
 <tr><td class="date">20:00</td><td class="genre">テニス</td><td class="tournament">リヨンオープン</td><td>第4日</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>3月6日（金曜日）</b></td></tr>
 <tr><td class="date">04:00</td><td class="genre">ダーツ</td><td class="tournament">PLD</td><td>第5週：エクセター</td><td></td></tr>
 <tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">FAカップ</td><td>ダービー vs マンチェスター・U：5回戦</td><td>解説：粕谷秀樹 実況：西岡明彦</td></tr>
-<tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">コッパ・イタリア</td><td>ナポリ vs インテル：準決勝第2戦</td><td></td></tr>
+<tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">コッパ・イタリア</td><td>【試合延期】ナポリ vs インテル：準決勝第2戦</td><td></td></tr>
 <tr><td class="date">05:00</td><td class="genre">サッカー</td><td class="tournament">コパ・デル・レイ</td><td>グラナダ vs ビルバオ：準決勝第2戦</td><td></td></tr>
 <tr><td class="date">06:00</td><td class="genre">テニス</td><td class="tournament">アビエルトGNPセグロス</td><td>第4日</td><td></td></tr>
 <tr><td class="date">13:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>オープン戦：阪神 vs 日本ハム</td><td>解説：下柳剛 実況：楠淳生</td></tr>
@@ -211,12 +205,12 @@
 <tr class="date-row"><td colspan="5" rowspan="1"><b>3月15日（日曜日）</b></td></tr>
 <tr><td class="date">00:00</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>バレンシア vs レバンテ</td><td></td></tr>
 <tr><td class="date">00:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>ブライトン vs アーセナル</td><td>解説：粕谷秀樹 実況：河村太朗</td></tr>
-<tr><td class="date">00:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>マンチェスター・C vs バーンリー</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">00:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>マンチェスター・C vs バーンリー</td><td>実況：野村明弘</td></tr>
 <tr><td class="date">00:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>ニューカッスル vs シェフィールド・U（武藤嘉紀）</td><td></td></tr>
 <tr><td class="date">00:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>ノリッジ vs サウサンプトン</td><td></td></tr>
 <tr><td class="date">01:30</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td>モンペリエ vs マルセイユ</td><td></td></tr>
 <tr><td class="date">02:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>ナポリ vs SPAL</td><td></td></tr>
-<tr><td class="date">02:30</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>マジョルカ vs バルセロナ（久保建英）</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">02:30</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>マジョルカ vs バルセロナ（久保建英）</td><td>解説：川勝良一 実況：倉敷保雄</td></tr>
 <tr><td class="date">02:30</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>アストンヴィラ vs チェルシー</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>サンプドリア vs ボローニャ（吉田麻也／冨安健洋）</td><td>日本語実況あり</td></tr>
 <tr><td class="date">05:00</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>セルタ vs ビジャレアル</td><td></td></tr>
@@ -270,6 +264,11 @@
 <tr><td class="date">19:00</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td>福岡 vs 町田</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">19:30</td><td class="genre">サッカー</td><td class="tournament">J1リーグ</td><td>浦和 vs 仙台</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">19:30</td><td class="genre">サッカー</td><td class="tournament">J2リーグ</td><td>磐田 vs 栃木</td><td>日本語実況・解説あり</td></tr>
+<tr class="date-row"><td colspan="5" rowspan="1"><b>3月19日（木曜日）</b></td></tr>
+<tr><td class="date">05:00</td><td class="genre">テニス</td><td class="tournament">BNPパリバ・オープン</td><td>第8日：セッション1</td><td></td></tr>
+<tr><td class="date">05:00</td><td class="genre">サッカー</td><td class="tournament">UEFAチャンピオンズリーグ</td><td>バルセロナ vs ナポリ：ラウンド16第2戦</td><td>解説：水沼貴史 実況：西岡明彦</td></tr>
+<tr><td class="date">05:00</td><td class="genre">サッカー</td><td class="tournament">UEFAチャンピオンズリーグ</td><td>バイエルン vs チェルシー：ラウンド16第2戦</td><td>解説：名波浩 実況：下田恒幸</td></tr>
+<tr><td class="date">10:00</td><td class="genre">テニス</td><td class="tournament">BNPパリバ・オープン</td><td>第8日：セッション2</td><td></td></tr>
 </table>
 </div>
 </body>
