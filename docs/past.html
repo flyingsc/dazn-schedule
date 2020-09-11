@@ -24,6 +24,7 @@
 ジャンルで検索：<select id="genre">
 <option value="全て">全て</option>
 <option value="お気に入り">お気に入り</option>
+<option value="アメフト">アメフト</option>
 <option value="ゴルフ">ゴルフ</option>
 <option value="サッカー">サッカー</option>
 <option value="ダーツ">ダーツ</option>
@@ -40,30 +41,17 @@
 <option value="J1リーグ" class="サッカー">J1リーグ</option>
 <option value="J2リーグ" class="サッカー">J2リーグ</option>
 <option value="J3リーグ" class="サッカー">J3リーグ</option>
+<option value="NFL" class="アメフト">NFL</option>
 <option value="NPB" class="野球">NPB</option>
 <option value="PLD" class="ダーツ">PLD</option>
 <option value="アンダルシア・バルデラママスターズ" class="ゴルフ">アンダルシア・バルデラママスターズ</option>
 <option value="プレシーズンマッチ" class="サッカー">プレシーズンマッチ</option>
 <option value="プレミアシップラグビー" class="ラグビーユニオン">プレミアシップラグビー</option>
 <option value="ポルトガルマスターズ" class="ゴルフ">ポルトガルマスターズ</option>
+<option value="リーグアン" class="サッカー">リーグアン</option>
 </select><br/>
 <table>
 <tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>
-<tr class="date-row"><td colspan="5" rowspan="1"><b>9月4日（金曜日）</b></td></tr>
-<tr><td class="date">03:00</td><td class="genre">ダーツ</td><td class="tournament">PLD</td><td>第14日</td><td></td></tr>
-<tr><td class="date">16:35</td><td class="genre">モータースポーツ</td><td class="tournament">F3</td><td>F3 第8戦 モンツァ：フリー走行</td><td></td></tr>
-<tr><td class="date">18:00</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>FORMULA1 2020 第8戦 ハイネケン・イタリアGP：フリー走行1回目</td><td>解説：熱田護 田中健一：</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>阪神 vs 巨人</td><td>解説：安藤統男 実況：村田匡輝 リポーター：桐山隆</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ヤクルト vs 中日</td><td>解説：真中満 実況：中村光宏</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>日本ハム vs 西武</td><td>解説：稲田直人 実況：近藤祐司</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>楽天 vs オリックス</td><td>解説：野口寿浩 実況：中田浩光 リポーター：増田優香子</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ソフトバンク vs ロッテ</td><td>解説：柴原洋 実況：大前一樹 リポーター：海里</td></tr>
-<tr><td class="date">19:00</td><td class="genre">ゴルフ</td><td class="tournament">アンダルシア・バルデラママスターズ</td><td>ラウンド2：セッション1</td><td></td></tr>
-<tr><td class="date">19:55</td><td class="genre">モータースポーツ</td><td class="tournament">F2</td><td>F2 第8戦 モンツァ：フリー走行</td><td></td></tr>
-<tr><td class="date">21:05</td><td class="genre">モータースポーツ</td><td class="tournament">F3</td><td>F3 第8戦 モンツァ：予選</td><td></td></tr>
-<tr><td class="date">22:00</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>FORMULA1 2020 第8戦 ハイネケン・イタリアGP：フリー走行2回目</td><td>解説：小倉茂徳 田中健一：</td></tr>
-<tr><td class="date">22:00</td><td class="genre">サッカー</td><td class="tournament">プレシーズンマッチ</td><td>シェフィールド・U vs プレストン</td><td></td></tr>
-<tr><td class="date">22:00</td><td class="genre">ゴルフ</td><td class="tournament">アンダルシア・バルデラママスターズ</td><td>ラウンド2：セッション2</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>9月5日（土曜日）</b></td></tr>
 <tr><td class="date">00:00</td><td class="genre">モータースポーツ</td><td class="tournament">F2</td><td>F2 第8戦 モンツァ：予選</td><td></td></tr>
 <tr><td class="date">03:00</td><td class="genre">ダーツ</td><td class="tournament">PLD</td><td>第15日</td><td></td></tr>
@@ -167,6 +155,22 @@
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ロッテ vs 日本ハム</td><td>解説：薮田安彦 実況：吉田伸男 リポーター：北川義隆</td></tr>
 <tr><td class="date">19:00</td><td class="genre">ゴルフ</td><td class="tournament">ポルトガルマスターズ</td><td>ラウンド1：セッション1</td><td></td></tr>
 <tr><td class="date">22:00</td><td class="genre">ゴルフ</td><td class="tournament">ポルトガルマスターズ</td><td>ラウンド1：セッション2</td><td></td></tr>
+<tr class="date-row"><td colspan="5" rowspan="1"><b>9月11日（金曜日）</b></td></tr>
+<tr><td class="date">04:00</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td>RCランス vs PSG</td><td>実況：西達彦</td></tr>
+<tr><td class="date">09:20</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>チーフス vs テキサンズ</td><td></td></tr>
+<tr><td class="date">16:35</td><td class="genre">モータースポーツ</td><td class="tournament">F3</td><td>F3 第9戦 ムジェロ：フリー走行</td><td></td></tr>
+<tr><td class="date">18:00</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>FORMULA1 2020 第9戦 ピレリ・トスカーナ フェラーリ 1000 2020 ムジェロGP：フリー走行1回目</td><td>解説：小倉茂徳 田中健一：</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>巨人vs ヤクルト</td><td>解説：清水隆行 実況：蛯原哲</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>DeNA vs 中日</td><td>解説：秦真司 実況：上野智広</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>阪神 vs 広島</td><td>解説：狩野恵輔 実況：寺西裕一 リポーター：楠淳生</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>楽天 vs 日本ハム</td><td>解説：松本匡史 実況：熊谷龍一 リポーター：若林翔子</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ロッテ vs オリックス</td><td>解説：里崎智也 実況：田中大貴 リポーター：北川義隆</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ソフトバンク vs 西武</td><td>解説：加藤伸一 実況：信川竜太 リポーター：海里</td></tr>
+<tr><td class="date">19:00</td><td class="genre">ゴルフ</td><td class="tournament">ポルトガルマスターズ</td><td>ラウンド2：セッション1</td><td></td></tr>
+<tr><td class="date">19:55</td><td class="genre">モータースポーツ</td><td class="tournament">F2</td><td>F2 第9戦 ムジェロ：フリー走行</td><td></td></tr>
+<tr><td class="date">21:05</td><td class="genre">モータースポーツ</td><td class="tournament">F3</td><td>F3 第9戦 ムジェロ：予選</td><td></td></tr>
+<tr><td class="date">22:00</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>FORMULA1 2020 第9戦 ピレリ・トスカーナ フェラーリ 1000 2020 ムジェロGP：フリー走行2回目</td><td>解説：小倉茂徳 田中健一：</td></tr>
+<tr><td class="date">22:00</td><td class="genre">ゴルフ</td><td class="tournament">ポルトガルマスターズ</td><td>ラウンド2：セッション2</td><td></td></tr>
 </table>
 </div>
 </body>
