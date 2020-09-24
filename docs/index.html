@@ -20,7 +20,7 @@
 <div id="footer" style="display:none;"></div>
 <div class="container">
   
-<!-- <div class="update_time">更新: 2020年09月24日 07:00</div> -->
+<!-- <div class="update_time">更新: 2020年09月25日 07:00</div> -->
 <div id="for_bookmark"></div>
 <!-- <p>不具合があった場合は<a href="https://dazn-schedule.netlify.com/form.html">こちら</a> <a href="./freeze_chrome.html">(Chromeが固まる方へ)</a></p> -->
 <p>個人設定を追加しました</p>
@@ -33,6 +33,7 @@
 <option value="全て">全て</option>
 <option value="お気に入り">お気に入り</option>
 <option value="アメフト">アメフト</option>
+<option value="ゴルフ">ゴルフ</option>
 <option value="サッカー">サッカー</option>
 <option value="テニス">テニス</option>
 <option value="モータースポーツ">モータースポーツ</option>
@@ -48,7 +49,9 @@
 <option value="J3リーグ" class="サッカー">J3リーグ</option>
 <option value="NFL" class="アメフト">NFL</option>
 <option value="NPB" class="野球">NPB</option>
+<option value="アイルランドオープン" class="ゴルフ">アイルランドオープン</option>
 <option value="ストラスブール国際" class="テニス">ストラスブール国際</option>
+<option value="セリエA" class="サッカー">セリエA</option>
 <option value="プレミアリーグ" class="サッカー">プレミアリーグ</option>
 <option value="ベルギーリーグ" class="サッカー">ベルギーリーグ</option>
 <option value="ラ・リーガ" class="サッカー">ラ・リーガ</option>
@@ -56,11 +59,6 @@
 </select><br/>
 <table>
 <tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>
-<tr class="date-row"><td colspan="5" rowspan="1"><b>9月24日（木曜日）</b></td></tr>
-<tr><td class="date">17:00</td><td class="genre">テニス</td><td class="tournament">ストラスブール国際</td><td>準々決勝</td><td></td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>楽天 vs ロッテ</td><td>解説：森山周 実況：中田浩光 リポーター：増田優香子</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>西武 vs 日本ハム</td><td>解説：清水隆行 実況：鈴木光裕 リポーター：飯塚治</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ソフトバンク vs オリックス</td><td>解説：若菜嘉晴 実況：石黒新平 リポーター：海里</td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>9月25日（金曜日）</b></td></tr>
 <tr><td class="date">09:20</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>ジャガーズ vs ドルフィンズ</td><td></td></tr>
 <tr><td class="date">15:35</td><td class="genre">モータースポーツ</td><td class="tournament">F2</td><td>F2 第10戦 ロシア：フリー走行</td><td></td></tr>
@@ -73,6 +71,7 @@
 <tr><td class="date">20:00</td><td class="genre">モータースポーツ</td><td class="tournament">F2</td><td>F2 第10戦 ロシア：予選</td><td></td></tr>
 <tr><td class="date">20:30</td><td class="genre">テニス</td><td class="tournament">ストラスブール国際</td><td>準決勝</td><td></td></tr>
 <tr><td class="date">21:00</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>FORMULA1 2020 第10戦 VTB・ロシアGP：フリー走行2回目</td><td>解説：小倉茂徳 田中健一：</td></tr>
+<tr><td class="date">21:00</td><td class="genre">ゴルフ</td><td class="tournament">アイルランドオープン</td><td>ラウンド2</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>9月26日（土曜日）</b></td></tr>
 <tr><td class="date">04:00</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td>リール vs ナント</td><td></td></tr>
 <tr><td class="date">14:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>巨人 vs 中日</td><td>解説：赤星憲広 実況：佐藤義朗</td></tr>
@@ -94,13 +93,18 @@
 <tr><td class="date">20:30</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>ブライトン vs マンチェスター・U</td><td>解説：水沼貴史 実況：永田実</td></tr>
 <tr><td class="date">21:00</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>FORMULA1 2020 第10戦 VTB・ロシアGP：予選</td><td>解説：小倉茂徳 実況：サッシャ</td></tr>
 <tr><td class="date">21:00</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>F1ゾーン 第10戦VTB・ロシアGP：予選</td><td>解説：小倉茂徳 実況：サッシャ</td></tr>
+<tr><td class="date">22:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>トリノ vs アタランタ : 第2節</td><td></td></tr>
 <tr><td class="date">22:00</td><td class="genre">テニス</td><td class="tournament">ストラスブール国際</td><td>決勝</td><td></td></tr>
-<tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>バレンシア vs ウエスカ : 第3節 (岡崎慎司)</td><td>日本語実況あり</td></tr>
+<tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>バレンシア vs ウエスカ : 第3節 (岡崎慎司)</td><td>実況：福田浩大</td></tr>
+<tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>クリスタルパレス vs エヴァートン</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>9月27日（日曜日）</b></td></tr>
+<tr><td class="date">01:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>サンプドリア vs ベネヴェント : 第2節 (吉田麻也)</td><td></td></tr>
 <tr><td class="date">01:30</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>エルチェ vs ソシエダ : 第3節</td><td></td></tr>
-<tr><td class="date">01:30</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>WBA vs チェルシー</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">01:30</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>WBA vs チェルシー</td><td>解説：ベン・メイブリー 実況：下田恒幸</td></tr>
 <tr><td class="date">01:30</td><td class="genre">サッカー</td><td class="tournament">ベルギーリーグ</td><td>メヘレン vs シント=トロイデン (鈴木優磨、松原后ほか)</td><td>日本語実況あり</td></tr>
-<tr><td class="date">04:00</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>ベティス vs レアル・マドリード : 第3節</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">03:45</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>インテル vs フィオレンティーナ : 第2節</td><td>実況：中村義昭</td></tr>
+<tr><td class="date">04:00</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>ベティス vs レアル・マドリード : 第3節</td><td>解説：福田正博 実況：倉敷保雄</td></tr>
+<tr><td class="date">04:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>バーンリー vs サウサンプトン</td><td></td></tr>
 <tr><td class="date">13:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>西武 vs 楽天</td><td>解説：長田秀一郎 実況：槇嶋範彦 リポーター：喜谷知純</td></tr>
 <tr><td class="date">13:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ロッテ vs ソフトバンク</td><td>解説：薮田安彦 実況：加藤暁 リポーター：南隼人</td></tr>
 <tr><td class="date">13:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>オリックス vs 日本ハム</td><td>解説：山沖之彦 実況：大前一樹 リポーター：竹村美緒</td></tr>
@@ -133,21 +137,26 @@
 <tr><td class="date">20:10</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>FORMULA1 2020 第10戦 VTB・ロシアGP：決勝 (9/27 19:30配信開始)</td><td>解説：小倉茂徳 実況：サッシャ</td></tr>
 <tr><td class="date">20:10</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>F1 ゾーン 第10戦 VTB・ロシアGP：決勝 (9/27 19:30配信開始)</td><td>解説：小倉茂徳 実況：サッシャ</td></tr>
 <tr><td class="date">21:00</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>エイバル vs ビルバオ : 第3節 (乾貴士、武藤嘉紀)</td><td>日本語実況あり</td></tr>
-<tr><td class="date">22:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>トッテナム vs ニューカッスル</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">22:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>ナポリ vs ジェノア : 第2節</td><td></td></tr>
+<tr><td class="date">22:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>トッテナム vs ニューカッスル</td><td>解説：渡邉一平 実況：喜谷知純</td></tr>
 <tr><td class="date">23:00</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>アトレティコ vs グラナダ : 第3節</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>9月28日（月曜日）</b></td></tr>
-<tr><td class="date">00:30</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>マンチェスター・C vs レスター</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">00:30</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>マンチェスター・C vs レスター</td><td>解説：戸田和幸 実況：安井成行</td></tr>
+<tr><td class="date">01:00</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>クロトーネ vs ミラン : 第2節</td><td>実況：八塚浩</td></tr>
 <tr><td class="date">01:30</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>カディス vs セビージャ : 第3節</td><td></td></tr>
 <tr><td class="date">01:30</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>バジャドリード vs セルタ : 第3節</td><td></td></tr>
 <tr><td class="date">02:00</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>レッドゾーン</td><td></td></tr>
 <tr><td class="date">02:00</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>ジャイアンツ vs 49ers</td><td></td></tr>
 <tr><td class="date">02:00</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>ペイトリオッツ vs レイダース</td><td></td></tr>
-<tr><td class="date">04:00</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>バルセロナ vs ビジャレアル : 第3節 (久保建英)</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">03:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>ウェストハム vs ウォルヴァーハンプトン : 第3節</td><td></td></tr>
+<tr><td class="date">03:45</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>ローマ vs ユヴェントス : 第2節</td><td>実況：北川義隆</td></tr>
+<tr><td class="date">04:00</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>バルセロナ vs ビジャレアル : 第3節 (久保建英)</td><td>解説：小澤一郎 実況：桑原学</td></tr>
 <tr><td class="date">04:00</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td>スタッド・ランス vs PSG</td><td></td></tr>
 <tr><td class="date">05:25</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>シーホークス vs カウボーイズ</td><td></td></tr>
 <tr><td class="date">09:20</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>セインツ vs パッカーズ</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>9月29日（火曜日）</b></td></tr>
-<tr><td class="date">04:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>リヴァプール vs アーセナル : 第3節 (南野拓実)</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">01:45</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>フラム vs アストンヴィラ</td><td></td></tr>
+<tr><td class="date">04:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>リヴァプール vs アーセナル : 第3節 (南野拓実)</td><td>解説：川勝良一 実況：野村明弘</td></tr>
 <tr><td class="date">09:15</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>レイブンズ vs チーフス</td><td></td></tr>
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>DeNA vs ヤクルト</td><td>解説：多村仁志 実況：石黒新平</td></tr>
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>阪神 vs 中日</td><td>解説：湯舟敏郎 実況：寺西裕一 リポーター：桐山隆</td></tr>
@@ -261,6 +270,12 @@
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>日本ハム vs 楽天 : 10/8</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>西武 vs ソフトバンク : 10/8</td><td>日本語実況・解説あり</td></tr>
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ロッテ vs オリックス : 10/8</td><td>日本語実況・解説あり</td></tr>
+<tr class="date-row"><td colspan="5" rowspan="1"><b>10月9日（金曜日）</b></td></tr>
+<tr><td class="date">09:20</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>ベアーズ vs バッカニアーズ : 第5週</td><td></td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>阪神 vs DeNA : 10/9</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>日本ハム vs オリックス : 10/9</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>楽天 vs 西武 : 10/9</td><td>日本語実況・解説あり</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ソフトバンク vs ロッテ : 10/9</td><td>日本語実況・解説あり</td></tr>
 </table>
 </div>
 </body>
