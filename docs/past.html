@@ -27,13 +27,16 @@
 <option value="アメフト">アメフト</option>
 <option value="ゴルフ">ゴルフ</option>
 <option value="サッカー">サッカー</option>
+<option value="バスケットボール">バスケットボール</option>
 <option value="モータースポーツ">モータースポーツ</option>
 <option value="ラグビーユニオン">ラグビーユニオン</option>
+<option value="総合格闘技">総合格闘技</option>
 <option value="野球">野球</option>
 </select><br/>
 
 リーグで検索：<select id="tournament">
 <option value="全て">全て</option>
+<option value="B1" class="バスケットボール">B1</option>
 <option value="F1" class="モータースポーツ">F1</option>
 <option value="F2" class="モータースポーツ">F2</option>
 <option value="J1リーグ" class="サッカー">J1リーグ</option>
@@ -41,29 +44,19 @@
 <option value="J3リーグ" class="サッカー">J3リーグ</option>
 <option value="NFL" class="アメフト">NFL</option>
 <option value="NPB" class="野球">NPB</option>
+<option value="NPBファーム公式戦" class="野球">NPBファーム公式戦</option>
 <option value="アイルランドオープン" class="ゴルフ">アイルランドオープン</option>
 <option value="スュペル・リグ" class="サッカー">スュペル・リグ</option>
 <option value="セリエA" class="サッカー">セリエA</option>
 <option value="プレミアシップラグビー" class="ラグビーユニオン">プレミアシップラグビー</option>
 <option value="プレミアリーグ" class="サッカー">プレミアリーグ</option>
+<option value="ベラトール" class="総合格闘技">ベラトール</option>
 <option value="ベルギーリーグ" class="サッカー">ベルギーリーグ</option>
 <option value="ラ・リーガ" class="サッカー">ラ・リーガ</option>
 <option value="リーグアン" class="サッカー">リーグアン</option>
 </select><br/>
 <table>
 <tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>
-<tr class="date-row"><td colspan="5" rowspan="1"><b>9月25日（金曜日）</b></td></tr>
-<tr><td class="date">09:20</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>ジャガーズ vs ドルフィンズ</td><td></td></tr>
-<tr><td class="date">15:35</td><td class="genre">モータースポーツ</td><td class="tournament">F2</td><td>F2 第10戦 ロシア：フリー走行</td><td></td></tr>
-<tr><td class="date">17:00</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>FORMULA1 2020 第10戦VTB・ロシアGP：フリー走行1回目</td><td>解説：熱田護 田中健一：</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>巨人 vs 中日</td><td>解説：山本昌 実況：上重聡</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ヤクルト vs 阪神</td><td>解説：笘篠賢治 実況：竹下陽平</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>西武 vs 楽天</td><td>解説：松沼博久 実況：深澤慶 リポーター：加藤暁</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ロッテ vs ソフトバンク</td><td>解説：立川隆史 実況：槙嶋範彦 リポーター：南隼人</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>オリックス vs 日本ハム</td><td>解説：中沢伸二 実況：小野塚康之 リポーター：竹村美緒</td></tr>
-<tr><td class="date">20:00</td><td class="genre">モータースポーツ</td><td class="tournament">F2</td><td>F2 第10戦 ロシア：予選</td><td></td></tr>
-<tr><td class="date">21:00</td><td class="genre">モータースポーツ</td><td class="tournament">F1</td><td>FORMULA1 2020 第10戦 VTB・ロシアGP：フリー走行2回目</td><td>解説：小倉茂徳 田中健一：</td></tr>
-<tr><td class="date">21:00</td><td class="genre">ゴルフ</td><td class="tournament">アイルランドオープン</td><td>ラウンド2</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>9月26日（土曜日）</b></td></tr>
 <tr><td class="date">04:00</td><td class="genre">サッカー</td><td class="tournament">リーグアン</td><td>リール vs ナント</td><td></td></tr>
 <tr><td class="date">14:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>巨人 vs 中日</td><td>解説：赤星憲広 実況：佐藤義朗</td></tr>
@@ -199,6 +192,21 @@
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>日本ハム vs ロッテ</td><td>解説：岩本勉 実況：近藤祐司</td></tr>
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>楽天 vs ソフトバンク</td><td>解説：高橋雅裕 実況：鈴木光裕 リポーター：木下貴道</td></tr>
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>オリックス vs 西武</td><td>解説：中沢伸二 実況：川島壮雄 リポーター：古賀文沙</td></tr>
+<tr class="date-row"><td colspan="5" rowspan="1"><b>10月2日（金曜日）</b></td></tr>
+<tr><td class="date">02:00</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>ビルバオ vs カディス</td><td></td></tr>
+<tr><td class="date">02:00</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>セビージャ vs レバンテ</td><td></td></tr>
+<tr><td class="date">04:30</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>セルタ vs バルセロナ</td><td>解説：幸谷秀已 実況：桑原学</td></tr>
+<tr><td class="date">05:00</td><td class="genre">総合格闘技</td><td class="tournament">ベラトール</td><td>ベラトール247 : ジャクソン vs キールホルツ</td><td></td></tr>
+<tr><td class="date">09:20</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>ジェッツ vs ブロンコス</td><td></td></tr>
+<tr><td class="date">13:00</td><td class="genre">野球</td><td class="tournament">NPBファーム公式戦</td><td>ファーム公式戦 : 西武 vs 巨人 </td><td>実況：熊谷龍一</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>阪神 vs 巨人</td><td>解説：黒田正宏 実況：村田匡輝 リポーター：桐山隆</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ヤクルト vs 広島</td><td>解説：高木豊 実況：中村光宏</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>DeNA vs 中日</td><td>解説：佐伯貴弘 実況：節丸裕一</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ロッテ vs 西武</td><td>解説：立川隆史 実況：加藤暁 リポーター：木下貴道</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>オリックス vs 楽天</td><td>解説：星野伸之 実況：吉原功兼 リポーター：中島原野</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ソフトバンク vs 日本ハム</td><td>解説：加藤伸一 実況：石黒新平</td></tr>
+<tr><td class="date">19:00</td><td class="genre">サッカー</td><td class="tournament">J3リーグ</td><td>C大23 vs 今治</td><td>実況：服部優陽</td></tr>
+<tr><td class="date">19:05</td><td class="genre">バスケットボール</td><td class="tournament">B1</td><td>A東京 vs 川崎 </td><td>解説：渡邊拓馬 実況：槇嶋範彦</td></tr>
 </table>
 </div>
 </body>
