@@ -65,11 +65,11 @@ $(document).ready(function(){
 	var params = [];
 
 	if(genre != "全て"){
-	    params.push("genre=" + encodeURI(genre));
+	    params.push("genre=" + encodeURIComponent(genre));
 	}
 
 	if(tournament != "全て" && tournament != undefined){
-	    params.push("tournament=" + encodeURI(tournament));
+	    params.push("tournament=" + encodeURIComponent(tournament));
 	}
 
 	return "?" + params.join("&");
@@ -118,7 +118,7 @@ $(document).ready(function(){
     }
 
     function shouldShowProgram(genre, selected_genre, tournament, selected_tournament, favorite_genre, excluded_tournament){
-	if(genre == undefined || tournament == undefined){
+	if(genre === undefined || tournament === undefined || genre === "" || tournament === ""){
 	    // 日付のとき
 	    return true;
 	} else if(selected_genre == "全て" || selected_genre == genre){
@@ -146,9 +146,9 @@ $(document).ready(function(){
 	var prev_date = 0;
 
 	$("tr").each(function(){
-	    var genre = $(this).find("td.genre").html();
-	    var tournament = $(this).find("td.tournament").html();
-	    
+	    var genre = $(this).find("td.genre").text();
+	    var tournament = $(this).find("td.tournament").text();
+
 	    if(shouldShowProgram(genre, selected_genre, tournament, selected_tournament, favorite_genre, excluded_tournament)){
 		$(this).show();
 		
@@ -192,7 +192,7 @@ $(document).ready(function(){
 	    }
 	    
 	    var key = a[0];
-	    var value = decodeURI(a[1])
+	    var value = decodeURIComponent(a[1])
 	    
 	    if(key == "genre"){
 		$("#genre").val(value);
