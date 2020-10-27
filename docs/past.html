@@ -24,6 +24,7 @@
 ジャンルで検索：<select id="genre">
 <option value="全て">全て</option>
 <option value="お気に入り">お気に入り</option>
+<option value="eスポーツ">eスポーツ</option>
 <option value="アメフト">アメフト</option>
 <option value="ゴルフ">ゴルフ</option>
 <option value="サッカー">サッカー</option>
@@ -40,6 +41,7 @@
 リーグで検索：<select id="tournament">
 <option value="全て">全て</option>
 <option value="B1" class="バスケットボール">B1</option>
+<option value="BLASTプレミア" class="eスポーツ">BLASTプレミア</option>
 <option value="F1" class="モータースポーツ">F1</option>
 <option value="J1リーグ" class="サッカー">J1リーグ</option>
 <option value="J2リーグ" class="サッカー">J2リーグ</option>
@@ -50,6 +52,7 @@
 <option value="NPBファーム公式戦" class="野球">NPBファーム公式戦</option>
 <option value="V1女子" class="バレーボール">V1女子</option>
 <option value="イタリアン・オープン" class="ゴルフ">イタリアン・オープン</option>
+<option value="イーストレイクGC" class="ゴルフ">イーストレイクGC</option>
 <option value="ウェーバー・カップ" class="ボウリング">ウェーバー・カップ</option>
 <option value="エストラーダ vs. クアドラス" class="ボクシング">エストラーダ vs. クアドラス</option>
 <option value="スュペル・リグ" class="サッカー">スュペル・リグ</option>
@@ -63,21 +66,6 @@
 </select><br/>
 <table>
 <tr><th>時間</th><th>ジャンル</th><th>リーグ</th><th>対戦カード</th><th>実況・解説</th></tr>
-<tr class="date-row"><td colspan="5" rowspan="1"><b>10月20日（火曜日）</b></td></tr>
-<tr><td class="date">01:30</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>WBA vs バーンリー</td><td></td></tr>
-<tr><td class="date">02:00</td><td class="genre">サッカー</td><td class="tournament">スュペル・リグ</td><td>ガラタサライ vs アランヤ</td><td></td></tr>
-<tr><td class="date">02:00</td><td class="genre">ボウリング</td><td class="tournament">ウェーバー・カップ</td><td>初日 : セッション2</td><td></td></tr>
-<tr><td class="date">04:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>リーズ vs ウォルヴァーハンプトン</td><td></td></tr>
-<tr><td class="date">06:00</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>ビルズ vs チーフス</td><td></td></tr>
-<tr><td class="date">09:15</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>カージナルス vs カウボーイズ</td><td></td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>BASEBALL ZONE (4試合を1画面同時視聴)</td><td>解説：多村仁志 実況：石黒新平</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ヤクルト vs 巨人</td><td>解説：斎藤雅樹 実況：中村光宏</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>中日 vs DeNA</td><td>解説：宇野勝 実況：上野智広</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>阪神 vs 広島</td><td>解説：湯舟敏郎 実況：楠淳生 リポーター：桐山隆</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>日本ハム vs ソフトバンク</td><td>解説：森本稀哲 実況：近藤祐司</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>楽天 vs オリックス</td><td>解説：高橋雅裕 実況：中田浩光 リポーター：河内一朗</td></tr>
-<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>西武 vs ロッテ</td><td>解説：橋本武広 実況：谷口廣明 リポーター：木下貴道</td></tr>
-<tr><td class="date">21:00</td><td class="genre">ボウリング</td><td class="tournament">ウェーバー・カップ</td><td>第2日 : セッション1</td><td></td></tr>
 <tr class="date-row"><td colspan="5" rowspan="1"><b>10月21日（水曜日）</b></td></tr>
 <tr><td class="date">02:00</td><td class="genre">ボウリング</td><td class="tournament">ウェーバー・カップ</td><td>第2日 : セッション2</td><td></td></tr>
 <tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>【ハイライト】ヤクルト vs 巨人</td><td>解説：里崎智也 実況：谷岡慎一</td></tr>
@@ -230,6 +218,19 @@
 <tr><td class="date">05:05</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>レイダース vs バッカニアーズ</td><td></td></tr>
 <tr><td class="date">05:25</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>ブロンコス vs チーフス</td><td></td></tr>
 <tr><td class="date">09:20</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>シーホークス vs カージナルス</td><td></td></tr>
+<tr class="date-row"><td colspan="5" rowspan="1"><b>10月27日（火曜日）</b></td></tr>
+<tr><td class="date">00:30</td><td class="genre">eスポーツ</td><td class="tournament">BLASTプレミア</td><td>eスポーツ BLAST (フォールシリーズ) グループ1 : 初日</td><td></td></tr>
+<tr><td class="date">02:30</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>ブライトン vs WBA</td><td></td></tr>
+<tr><td class="date">04:00</td><td class="genre">ゴルフ</td><td class="tournament">イーストレイクGC</td><td>第1日</td><td></td></tr>
+<tr><td class="date">04:45</td><td class="genre">サッカー</td><td class="tournament">セリエA</td><td>ミラン vs ローマ</td><td>実況：北川義隆</td></tr>
+<tr><td class="date">05:00</td><td class="genre">サッカー</td><td class="tournament">ラ・リーガ</td><td>レバンテ vs セルタ</td><td></td></tr>
+<tr><td class="date">05:00</td><td class="genre">サッカー</td><td class="tournament">プレミアリーグ</td><td>バーンリー vs トッテナム</td><td>実況：永田実</td></tr>
+<tr><td class="date">09:15</td><td class="genre">アメフト</td><td class="tournament">NFL</td><td>ラムズ vs ベアーズ</td><td></td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>DeNA vs 巨人</td><td>解説：多村仁志 実況：谷口廣明</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>阪神 vs 中日</td><td>解説：濱中治 実況：中井雅之 リポーター：村田匡輝</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>西武 vs 楽天</td><td>解説：鈴木健 実況：熊谷龍一 リポーター：木下貴道</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>オリックス vs 日本ハム</td><td>解説：山沖之彦 実況：田中大貴 リポーター：古賀文沙</td></tr>
+<tr><td class="date">18:00</td><td class="genre">野球</td><td class="tournament">NPB</td><td>ソフトバンク vs ロッテ</td><td>解説：浜名千広 実況：石黒新平 リポーター：海里</td></tr>
 </table>
 </div>
 </body>
